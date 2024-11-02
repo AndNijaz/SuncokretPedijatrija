@@ -11,4 +11,4 @@ const app = Vue.createApp({
   },
 });
 
-app.mount(document.getElementById("app"));
+app.mount(document.getElementById("appz"));
