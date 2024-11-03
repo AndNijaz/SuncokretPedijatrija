@@ -33,6 +33,10 @@ a:visited {
   text-align: center;
 }
 
+.blue-text {
+  color: var(--accent-blue);
+}
+
 /* ---------------- */
 /* HEADINGS */
 /* ---------------- */
