@@ -1,0 +1,16 @@
+:root {
+  --heading-main: #31230c;
+  --text-main: #5a4f3d;
+  --accent-blue: #3064a2;
+  --main-orange-500: #f77e3a;
+  --main-orange-300: #fdd8c4; /* Ova se koristi kod pozadina za vakcine */
+  --main-orange-200: #fde5d8; /* Ova se koristi kao pozadina sectiona 
+                                   te kao pozadina blogova */
+  --main-orange-100: #fef2eb; /* Ova se koristi za text */
+  --yellow-500: #fbd599;
+
+  --xsm: 1.6rem;
+  --sm: 3.2rem;
+  --md: 4.8rem;
+  --lg: 6.4rem;
+}
