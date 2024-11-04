@@ -21,14 +21,61 @@
     <link rel="stylesheet" href="css/pages/hero-page.css" />
     <link rel="stylesheet" href="css/pages/services-page.css" />
     <link rel="stylesheet" href="css/pages/team-page.css" />
+    <link rel="stylesheet" href="css/header.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
+    <header class="header">
+      <!-- <div class="header-row"> -->
+      <a href="./index.html">
+        <img
+          src="./assets/logo-heading.svg"
+          alt="Suncokret logo"
+          class="header-logo"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="./index.html" class="main-nav-link">Početna</a></li>
+          <li>
+            <a href="#" class="main-nav-link">Usluge</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Naš tim</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Cjenovnik</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">O nama</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Blogovi</a>
+          </li>
+        </ul>
+        <a href="#contact" class="button-nav">Kontakt</a>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+      <!-- </div> -->
+    </header>
+
     <section class="section section-hero">
       <div class="carousel-container">
         <div class="carousel">
           <div class="carousel-slide">
             <img
-              src="/assets/pedijatrija-suncokret-carousel-1.jpg"
+              src="./assets/pedijatrija-suncokret-carousel-1.jpg"
               alt="Slide 1"
             />
             <div class="overlay"></div>
@@ -39,7 +86,7 @@
                 <span class="blue-text">petka</span> 10-18h
               </h2>
               <img
-                src="/assets/doodle-circle.svg"
+                src="./assets/doodle-circle.svg"
                 alt="doodle-cirlce"
                 class="doodle-circle"
               />
@@ -48,7 +95,7 @@
           </div>
           <div class="carousel-slide">
             <img
-              src="/assets/pedijatrija-suncokret-carousel-2.jpg"
+              src="./assets/pedijatrija-suncokret-carousel-2.jpg"
               alt="Slide 2"
             />
             <div class="overlay"></div>
@@ -59,7 +106,7 @@
                 <span class="blue-text">petka</span> 10-18h
               </h2>
               <img
-                src="/assets/doodle-circle.svg"
+                src="./assets/doodle-circle.svg"
                 alt="doodle-cirlce"
                 class="doodle-circle"
               />
@@ -68,7 +115,7 @@
           </div>
           <div class="carousel-slide">
             <img
-              src="/assets/pedijatrija-suncokret-carousel-3.jpg"
+              src="./assets/pedijatrija-suncokret-carousel-3.jpg"
               alt="Slide 3"
             />
             <div class="overlay"></div>
@@ -79,7 +126,7 @@
                 <span class="blue-text">petka</span> 10-18h
               </h2>
               <img
-                src="/assets/doodle-circle.svg"
+                src="./assets/doodle-circle.svg"
                 alt="doodle-cirlce"
                 class="doodle-circle"
               />
@@ -88,7 +135,7 @@
           </div>
           <div class="carousel-slide">
             <img
-              src="/assets/pedijatrija-suncokret-carousel-4.jpg"
+              src="./assets/pedijatrija-suncokret-carousel-4.jpg"
               alt="Slide 3"
             />
             <div class="overlay"></div>
@@ -99,7 +146,7 @@
                 <span class="blue-text">petka</span> 10-18h
               </h2>
               <img
-                src="/assets/doodle-circle.svg"
+                src="./assets/doodle-circle.svg"
                 alt="doodle-cirlce"
                 class="doodle-circle"
               />
@@ -118,6 +165,27 @@
             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
           </svg>
         </button>
+      </div>
+    </section>
+
+    <section class="section-usluge">
+      <div class="container">
+        <div class="wrapper text-center margin-bottom-md">
+          <div class="position-relative">
+            <h2 class="orange-text">Usluge</h2>
+            <img
+              src="./assets/doodle-subheading.svg"
+              alt="doodle-cirlce"
+              class="doodle-subheading"
+            />
+          </div>
+          <h1 class="heading-primary">
+            Usluge koje <span class="blue-text">pružamo</span>
+          </h1>
+        </div>
+        <div id="service-container" class="service-grid margin-bottom-sm"></div>
+
+        <a href="#" class="button centered-button">Saznaj više</a>
       </div>
     </section>
 
@@ -143,8 +211,76 @@
         <div class="wrapper"></div>
       </div>
     </section>
+
+    <section class="section-o-nama">
+      <div class="container">
+        <div class="wrapper text-center margin-bottom-md">
+          <div class="position-relative">
+            <h2 class="orange-text">O nama</h2>
+            <img
+              src="./assets/doodle-subheading.svg"
+              alt="doodle-cirlce"
+              class="doodle-subheading"
+            />
+          </div>
+          <h1 class="heading-primary">
+            Dobro došli u našu <span class="blue-text">ordinaciju</span>
+          </h1>
+        </div>
+
+        <div class="grid grid--2-cols grid--gap-standard">
+          <img
+            src="./assets//pedijatrija-suncokret-ordinacija-1.jpg"
+            alt="Ordinacija"
+            class="o-nama-img border-radius"
+          />
+          <div>
+            <h2 class="heading-secondary">Suncokret</h2>
+            <p>
+              „Suncokret“ je privatna pedijatrijska ordinacija organizovana po
+              najsavremenijim standardima. Osim kvalitetne i stručne usluge cilj
+              nam je da se kod nas Vi i Vaše dijete osjećate ugodno.
+            </p>
+          </div>
+          <img
+            src="./assets//pedijatrija-suncokret-ordinacija-2.jpg"
+            alt="Ordinacija"
+            class="o-nama-img border-radius"
+          />
+          <div>
+            <h2 class="heading-secondary">Bolesti i ljekari</h2>
+            <p>
+              Bolest i odlazak ljekaru je stres za dijete i za roditelja.
+              Ordinacija „Suncokret“ je koncipirana tako da u prijatnoj
+              atmosferi objekta, sa ljubaznim i stručnim osobljem skupa
+              savladamo bolest i strah. Naš osnovni pristup u terapiji akutnih
+              stanja sa povišenom temperaturom je što manja primjena
+              antibiotika.
+            </p>
+          </div>
+          <img
+            src="./assets//pedijatrija-suncokret-ordinacija-3.jpg"
+            alt="Ordinacija"
+            class="o-nama-img border-radius"
+          />
+          <div>
+            <h2 class="heading-secondary">Pregled</h2>
+            <p class="margin-bottom-md">
+              Pregled u „Suncokretu“ Vam daje mogućnost daljih telefonskih
+              konsultacija uz kontrole sa praćenjem stanja Vašeg djeteta uz
+              eventualno uključivanje dodatne terapije.
+            </p>
+            <a href="#" class="button">Saznaj više o nama</a>
+          </div>
+        </div>
+
+        <!-- <a href="#" class="button centered-button">Saznaj više</a>-->
+      </div>
+    </section>
+
     <script src="https://unpkg.com/vue@3"></script>
     <script src="script/main.js"></script>
+    <script src="script/hero-services.js"></script>
     <script src="script/carousel.js"></script>
   </body>
 </html>

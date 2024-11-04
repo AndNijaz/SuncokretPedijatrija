@@ -38,6 +38,9 @@ a:visited {
   color: var(--accent-blue);
 }
 
+.orange-text {
+  color: var(--main-orange-500);
+}
 /* ---------------- */
 /* HEADINGS */
 /* ---------------- */
@@ -51,6 +54,8 @@ a:visited {
 }
 
 .heading-secondary {
+  font-size: 2.6rem;
+  color: var(--heading-main);
 }
 
 .heading-tertiary {
@@ -84,6 +89,10 @@ a:visited {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--gap-standard {
+  gap: 4.4rem;
+}
+
 /* ---------------- */
 /* BUTTONS */
 /* ---------------- */
@@ -93,6 +102,12 @@ a:visited {
   font-size: 2rem;
   color: var(--white) !important;
   border-radius: 12px;
+}
+
+.centered-button {
+  display: block;
+  margin: 0 auto;
+  width: max-content;
 }
 
 /* ---------------- */
@@ -171,6 +186,9 @@ a:visited {
 .lazy-img {
   filter: blur(20px);
 }
+.border-radius {
+  border-radius: 12px;
+}
 
 /* ---------------- */
 /* LINKS */
@@ -212,4 +230,16 @@ textarea {
 }
 
 .input-text {
+}
+
+/* ---------------- */
+/* Doodles */
+/* ---------------- */
+
+.doodle-subheading {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
 }
