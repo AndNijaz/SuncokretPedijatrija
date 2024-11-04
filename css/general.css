@@ -18,6 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   color: var(--text-main);
+  font-size: 1.6rem;
 }
 
 a:link,
@@ -41,6 +42,8 @@ a:visited {
 /* HEADINGS */
 /* ---------------- */
 .heading-primary {
+  font-size: 4.4rem;
+  color: var(--heading-main);
 }
 
 .heading-primary span,
@@ -84,6 +87,13 @@ a:visited {
 /* ---------------- */
 /* BUTTONS */
 /* ---------------- */
+.button {
+  background-color: var(--main-orange-500);
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  color: var(--white) !important;
+  border-radius: 12px;
+}
 
 /* ---------------- */
 /* MARGINS */
@@ -180,6 +190,9 @@ section {
 /* ---------------- */
 /* PARAGRAPH */
 /* ---------------- */
+.paragraph {
+  font-size: 2rem;
+}
 
 /* ---------------- */
 /* BACKGROUND BOXES */

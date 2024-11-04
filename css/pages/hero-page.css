@@ -1,3 +1,6 @@
+/* ---------------------------- */
+/* HERO SECTION */
+/* ---------------------------- */
 .carousel-container {
   width: 100%;
   position: relative;
@@ -102,6 +105,22 @@
   fill: #333;
 }
 
+/* ---------------------------- */
+/* TEAM SECTION */
+/* ---------------------------- */
+.section-team {
+  background-color: var(--main-orange-200);
+}
+
+.section-team .blue-text {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+/* ---------------------------- */
+/* RESPONSIVE */
+/* ---------------------------- */
 /* Responsive Breakpoints */
 @media (max-width: 84em) {
   /* .carousel-content h2 {
