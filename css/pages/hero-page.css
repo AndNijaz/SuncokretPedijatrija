@@ -184,12 +184,27 @@
 /* ---------------------------- */
 .section-team {
   background-color: var(--main-orange-200);
+  background: url("../../assets/doodle-sqrl.svg"), var(--main-orange-200);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 }
 
 .section-team .blue-text {
   font-size: 3rem;
   font-weight: 700;
   line-height: 3rem;
+}
+
+.section-team .wrapper:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+}
+
+.section-team img {
+  border-radius: 12px;
+  width: 100%;
 }
 
 /* ---------------------------- */
@@ -222,6 +237,9 @@
   }
   .section-usluge {
     padding-top: 12.8rem;
+  }
+  .section-team {
+    background-size: 120% 120%;
   }
 }
 
@@ -257,7 +275,7 @@
   .hero-box-wrapper {
     width: 95%;
     top: 90%;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
   }
 
   .hero-box:last-child {
@@ -268,6 +286,16 @@
 
   .section-usluge {
     margin-top: 35rem;
+  }
+
+  .section-team {
+    background-size: 140% 140%;
+  }
+  .paragraph {
+    font-size: 1.6rem;
+  }
+  .section-team .wrapper {
+    align-items: center;
   }
 }
 
@@ -296,15 +324,27 @@
   .section-usluge {
     margin-top: 40rem;
   }
+  .section-team .container {
+    grid-template-columns: 1fr;
+  }
+  .section-team .wrapper img {
+    display: none !important;
+  }
 }
 
 @media (max-width: 34em) {
   .section-usluge {
-    margin-top: 45rem;
+    margin-top: 70rem;
   }
+  .hero-box:last-child {
+    /* text-align: center; */
+    grid-column: span 1;
+    /* grid-template-columns: span 3; */
+  }
+
   .hero-box-wrapper {
-    top: 95%;
-    /* grid-template-columns: repeat(1, 1fr) !important; */
+    top: 110%;
+    /* grid-template-columns: repeat(1, 1fr); */
   }
   .carousel-content h2 {
     font-size: 2.4rem;
@@ -323,6 +363,9 @@
   .carousel-content {
     left: 15%;
     max-width: 28rem;
+  }
+  .section-team {
+    background-size: 240% 240%;
   }
 }
 
