@@ -1,16 +1,12 @@
-.accordion {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
 .accordion-item {
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 1.6rem;
 }
 
 .accordion-header {
-  padding: 15px;
-  background-color: #f1f1f1;
+  padding: 2.4rem 1.6rem;
+  border-radius: 12px;
+  background-color: #fccbb0;
+  color: var(--heading-main);
   cursor: pointer;
   font-weight: bold;
   display: flex;
@@ -18,22 +14,79 @@
   align-items: center;
 }
 
-.accordion-icon {
-  transition: transform 0.4s ease;
-}
-
-.accordion-icon.rotate {
-  transform: rotate(180deg); /* Rotates the arrow up when active */
+.accordion-icon-down,
+.accordion-icon-up {
+  transition: transform 0.3s ease;
 }
 
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  padding: 0 15px;
-  background-color: #ffffff;
-  transition: max-height 0.4s ease, padding 0.4s ease;
+  background-color: var(--main-orange-100);
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 1.6rem;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
-.accordion-content p {
-  margin: 15px 0;
+.icon-hidden {
+  display: none;
 }
+
+.accordion-row {
+  padding: 0 3.2rem;
+  padding-top: 1.6rem;
+  padding-bottom: 3.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-item {
+  margin-bottom: 1.6rem;
+}
+
+.accordion-header {
+  padding: 2.4rem 1.6rem;
+  border-radius: 12px;
+  background-color: #fccbb0;
+  color: var(--heading-main);
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-icon-down,
+.accordion-icon-up {
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--main-orange-100);
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  /* padding: 0 1.6rem; */
+  padding: 0px !important;
+}
+
+.icon-hidden {
+  display: none;
+}
+
+.accordion-row {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0.5rem 0; */
+  /* padding: 0 3.2rem; */
+  padding: 1.6rem 3.2rem;
+  /* padding-bottom: 3.2rem; */
+}
+
+.accordion-row:nth-child(even) {
+  background-color: #fde6d9;
+}
+/* Responsive Styles */
+
+/* Large screens (84em and below) */
