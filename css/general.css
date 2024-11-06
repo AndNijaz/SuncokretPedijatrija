@@ -255,10 +255,27 @@ textarea {
   width: 10rem;
 }
 
+/* ---------------- */
+/* Map */
+/* ---------------- */
+#map {
+  height: 100%;
+}
+
 @media (max-width: 59em) {
+  .heading-primary {
+    line-height: 5.2rem;
+  }
   .grid--3-cols {
     grid-template-columns: repeat(2, 1fr);
   }
+  #map {
+    /* height: 50%; */
+    height: 50rem;
+  }
+}
+
+@media (max-width: 44em) {
 }
 
 @media (max-width: 34em) {

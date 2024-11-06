@@ -31,6 +31,17 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -385,6 +396,38 @@
         </div>
 
         <!-- <a href="#" class="button centered-button">Saznaj više</a>-->
+      </div>
+    </section>
+
+    <section class="section section-map">
+      <div class="grid grid--2-cols">
+        <div class="wrapper">
+          <h2 class="orange-text text-center">O nama</h2>
+          <h2 class="heading-primary text-center margin-bottom-sm">
+            Gdje nas možete pronaći
+          </h2>
+          <div class="grid grid--2-cols">
+            <img
+              src="assets/pedijatrija-suncokret-lokacija-1.jpg"
+              alt="Lokacija Pedijatrije Suncokret"
+            />
+            <img
+              src="assets/pedijatrija-suncokret-lokacija-2.jpg"
+              alt="Lokacija Pedijatrije Suncokret"
+            />
+            <img
+              src="assets/pedijatrija-suncokret-lokacija-3.jpg"
+              alt="Lokacija Pedijatrije Suncokret"
+            />
+            <img
+              src="assets/pedijatrija-suncokret-lokacija-4.jpg"
+              alt="Lokacija Pedijatrije Suncokret"
+            />
+          </div>
+        </div>
+        <!-- <div> -->
+        <div id="map"></div>
+        <!-- </div> -->
       </div>
     </section>
 
