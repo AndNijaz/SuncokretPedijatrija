@@ -1,0 +1,39 @@
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+  padding: 15px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-icon {
+  transition: transform 0.4s ease;
+}
+
+.accordion-icon.rotate {
+  transform: rotate(180deg); /* Rotates the arrow up when active */
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  background-color: #ffffff;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-content p {
+  margin: 15px 0;
+}
