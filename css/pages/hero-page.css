@@ -1,6 +1,11 @@
 /* ---------------------------- */
 /* HERO SECTION */
 /* ---------------------------- */
+.section-hero {
+  padding-top: 0px;
+  position: relative;
+}
+
 .carousel-container {
   width: 100%;
   position: relative;
@@ -105,6 +110,47 @@
   fill: #333;
 }
 
+.hero-box-wrapper {
+  z-index: 10;
+  left: 50%;
+  top: 70%;
+  position: absolute;
+  padding: 1.6rem;
+  width: 80%;
+  transform: translate(-50%, -20%);
+  /* display: flex; */
+  gap: 6.4rem;
+}
+
+.hero-box {
+  background-color: var(--main-orange-500);
+  padding: 3.2rem 1.6rem;
+  border-radius: 12px;
+}
+
+.hero-box-icon {
+  color: #ffffffcc;
+
+  /* color: #fff; */
+  width: 3.2rem;
+  height: 3.2rem;
+  font-weight: 900;
+}
+
+.hero-box-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.hero-box-list-item {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  color: #ffffffcc;
+}
 /* ---------------------------- */
 /* SERVICES SECTION */
 /* ---------------------------- */
@@ -171,6 +217,12 @@
     font-size: 4.4rem;
     /* line-height: 6.2rem; */
   }
+  .hero-box-wrapper {
+    gap: 1.6rem;
+  }
+  .section-usluge {
+    padding-top: 12.8rem;
+  }
 }
 
 @media (max-width: 59em) {
@@ -201,6 +253,22 @@
   .service-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .hero-box-wrapper {
+    width: 95%;
+    top: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-box:last-child {
+    /* text-align: center; */
+    grid-column: span 2;
+    /* grid-template-columns: span 3; */
+  }
+
+  .section-usluge {
+    margin-top: 35rem;
+  }
 }
 
 @media (max-width: 44em) {
@@ -221,9 +289,23 @@
   .service-grid {
     grid-template-columns: 1fr;
   }
+  .hero-box-wrapper {
+    top: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-usluge {
+    margin-top: 40rem;
+  }
 }
 
 @media (max-width: 34em) {
+  .section-usluge {
+    margin-top: 45rem;
+  }
+  .hero-box-wrapper {
+    top: 95%;
+    /* grid-template-columns: repeat(1, 1fr) !important; */
+  }
   .carousel-content h2 {
     font-size: 2.4rem;
     line-height: 3rem;
