@@ -20,8 +20,72 @@
     <link rel="stylesheet" href="css/pages/hero-page.css" />
     <link rel="stylesheet" href="css/pages/services-page.css" />
     <link rel="stylesheet" href="css/pages/team-page.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </head>
   <body>
+    <header class="header">
+      <!-- <div class="header-row"> -->
+      <a href="./index.html">
+        <img
+          src="./assets/logo-heading.svg"
+          alt="Suncokret logo"
+          class="header-logo"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="./index.html" class="main-nav-link">Početna</a></li>
+          <li>
+            <a href="#" class="main-nav-link">Usluge</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Naš tim</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Cjenovnik</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">O nama</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Blogovi</a>
+          </li>
+        </ul>
+        <a href="#contact" class="button-nav">Kontakt</a>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+      <!-- </div> -->
+    </header>
+
     <section class="section-pedijatrijski-pregledi">
       <div class="image-container">
         <img
@@ -32,12 +96,165 @@
           <h2>Pedijatrijski pregledi</h2>
         </div>
       </div>
+      <div class="container">
+        <div class="service-item">
+          <div class="icon-container">
+            <i class="fas fa-baby"></i>
+          </div>
+          <div class="content">
+            <h3>Pregled novorođenčadi</h3>
+            <p>
+              U novorođenačkom uzrastu preventivni pregled u prvih nekoliko dana
+              po izlasku iz porodilišta je vrlo važan.
+            </p>
+            <p>
+              Obzirom na rani izlazak iz porodilišta često mladi roditelji
+              bivaju u nedoumici u vezi sa stanjem novog člana porodice. Stručna
+              pomoć i savjeti u vezi sa dojenjem, napredovanjem u težini,
+              zdravstvenim stanjem djeteta i drugi praktični savjeti su Vam na
+              raspolaganju kako u „Suncokretu“ tako i u okviru kućnih posjeta.
+            </p>
+            <p>
+              Za ovaj uzrast posebnu pomoć predstavlja mogućnost mjerenje
+              bilirubina preko kože, brza i bezbolna metoda određivanja
+              intenziteta novorođenačke žutice koju Vam nudimo u okviru usluga
+              „Suncokreta“.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="icon-container">
+            <i class="fas fa-child"></i>
+          </div>
+          <div class="content">
+            <h3>Dojenčad, mala i predškolska djeca</h3>
+            <p>
+              U novorođenačkom uzrastu preventivni pregled u prvih nekoliko dana
+              po izlasku iz porodilišta je vrlo važan.
+            </p>
+            <p>
+              Strah od nepoznatog, ranija loša iskustva sa ljekarom vezana za
+              ranije bolne intervencije kod djece u ovom uzrastu stvaraju i
+              nesigurnost i potrebu za individualni pristup i prilagođen rad.
+            </p>
+            <p>
+              U odabiru programa „Suncokret“ koji više podsjeća na igranje nego
+              na ordinaciju nastojimo umanjiti stres dolaska ljekaru. Za male
+              pacijente smo pripremili i simbolične nagrade za hrabrost.
+            </p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="icon-container">
+            <i class="fas fa-square-plus"></i>
+          </div>
+          <div class="content">
+            <h3>Pedijatrijski pregled školske djece</h3>
+            <p>
+              Školska djeca, pogotovo u nižim razredima osnovne škole još uvijek
+              bi trebala biti pod kontrolom pedijatra.
+            </p>
+            <p>
+              Školska djeca, pogotovo u nižim razredima osnovne škole još uvijek
+              bi trebala biti pod kontrolom pedijatra. Različite organizacione
+              šeme javnog zdravstva postavljaju administrativnu granicu
+              nadležnosti ljekara, koja nije uvijek u skladu sa stvarnim
+              potrebama djeteta. U ovom periodu prepubertetskog i pubertetskog
+              ubrzanog rasta, upkos relativnom zdravlju ove populacije krije se
+              zamka za razvoj pretpostavki narušenog zdravlja u kasnijoj dobi.
+            </p>
+            <p>
+              Preventivni pregledi, praćenje rasta i razvoja, znakov polnog
+              dozrijevanja, stanje kičme, povrede skeleta, težište navika
+              ishrane i svakodnevnog stila života su bitan faktor u prevenciji i
+              unapređenju zdravlja.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section-savjetovalista">
       <div class="image-container">
         <img src="./assets/savjetovališta.jpg" alt="Savjetovališta" />
         <div class="text-overlay">
           <h2>Savjetovališta</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="service-section">
+          <!-- Service Item 1 -->
+          <div class="service-item">
+            <div class="icon-container">
+              <i class="fa-solid fa-hospital"></i>
+            </div>
+            <div class="content">
+              <h3>Savjetovalište za zdravu djecu</h3>
+              <p>
+                Savjetovalište je namijenjeno za zdravu djecu u smislu praćenja
+                rasta i razvoja pomoću uobičajenih metoda mjerenja visine,
+                težine, obima glave i grudnog koša, koristeći odgovarajućih
+                grafičkih šema, pregleda po sistemima uz osvrt na pojedine
+                organe osjetljivije vezano za dob djeteta.
+              </p>
+              <p>
+                Npr. stopala u dobi 3 godine i više, kičmeni stub kod
+                predškolske i školske djece i sl. Laboratorijske analize,
+                ultrazvučni pregledi, EKG mogu biti sastavni dio ovih pregleda.
+                Osim toga svaki problem koji brine roditelje vezan za opšte
+                stanje, ishranu, navike djeteta i sl. može se prodiskutovati.
+              </p>
+
+              <p>
+                Osim toga svaki problem koji brine roditelje vezan za opšte
+                stanje, ishranu, navike djeteta i sl. može se prodiskutovati.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Item 2 -->
+          <div class="service-item">
+            <div class="icon-container">
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <div class="content">
+              <h3>Pulmološko-Alergološko savjetovalište</h3>
+              <p>
+                Za djecu sa bronhitisom, astmom i drugim oblicima alergijskih
+                manifestacija na raspolaganju Vam je pulmološko-alergološki
+                program.
+              </p>
+              <p>
+                Alergotestiranja, spirometrija, praćenje stanja astmatika pomoću
+                astma kontrol testova i sl. uz adekvatnu terapiju su
+                pretpostavka za postizanje kontrole astme i što manji broj
+                akutnih pogoršanja stanja.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Item 3 -->
+          <div class="service-item">
+            <div class="icon-container">
+              <i class="fa-solid fa-house-medical"></i>
+            </div>
+            <div class="content">
+              <h3>Neuroepidijatrijsko savjetovalište</h3>
+              <p>
+                Za djecu sa sumnjom ili teškoćama u psiho-motornom razvoju,
+                epilepsijom ili drugim neurološkim problemima, na raspolaganju
+                Vam je neuropedijatar.
+              </p>
+              <p>
+                Pregled dojenčadi uključuje i ultrazvuk mozga kao nezaobilaznu
+                metodu vizualizacije sa pristupom kroz otvorenu fontanelu. Ovaj
+                ultrazvučni pregled preporučujemo za prijevremeno rođenu djecu,
+                djecu iz rizične trudnoće, nakon teškog poroda, kao i za svu
+                zdravu dojenčad.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -49,6 +266,111 @@
         />
         <div class="text-overlay">
           <h2>Ultrazvučna dijagnostika</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="service-section">
+          <!-- Service Item 1 -->
+          <div class="service-item">
+            <div class="icon-container">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <div class="content">
+              <h3>Ultrazvuk kukova</h3>
+              <p>
+                Ultrazvučni pregled kukova spada u metodu tzv. skrininga ili
+                pretraživanja gdje se masovnim pregledima novorođenčadi
+                pronalaze djeca sa predispozicijom za razvojni poremećaj kukova
+                ili se dijagnosticira već nastalo iščašenje kukova. Pregled se
+                može obaviti već po rođenju, ali ne može biti konačan nalaz već
+                je potrebna kontrola do dobi 3 mjeseca.
+              </p>
+              <p>
+                Uobičajeno se preporučuje ultrazvučni pregled u dobi od 4 do 6
+                sedmica starosti a najkasnije do 3 mjeseca. Rutinski kontrolni
+                pregledi se obavljaju za dva do tri mjeseca. Već nakon šestog
+                mjeseca starosti pojava centara okoštavanja, veličina djeteta,
+                masa okolnih mišića bitno ograničava uspješnost pregleda.
+              </p>
+              <p>
+                Kod utvrđenog razvojnog poremećaja kuka kontrole i tretman su u
+                nadležnosti ortopeda. U kasnijoj dobi ultrazvuk služi za
+                dijagnosticiranje prisustva tečnosti u zglobu pri nekim upalnim
+                procesima. Za ultrazvučni pregled kukova nije potrebna priprema.
+              </p>
+              <p>
+                Obzirom da se dobija kvalitetniji snimak kod mirnog djeteta
+                preporučujemo dijete nahraniti prije dolaska ljekaru. Obucite
+                neku praktičnu odjeću koja se može lako skinuti i omogućiti
+                pristup do kukova. Kao i uvijek kod odlaska ljekaru ponesite
+                platnenu pelenu i rezervne pelene za jednokratnu upotrebu.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Item 2 -->
+          <div class="service-item">
+            <div class="icon-container">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="content">
+              <h3>Ultrazvuk mozga</h3>
+              <p>
+                Uslov za ultazvučni pregled mozga je dovoljno otvorena velika
+                fontanela na glavi djeteta (cca 1x1cm).
+              </p>
+              <p>
+                Ovaj pregled bez problema možemo obaviti kod novorođenčadi i
+                djece do šest mjeseci. Nakon ove dobi postoje individualne
+                razlike u brzini zatvaranja fontanele što limitira kvalitet
+                nalaza. Metoda je brza, bezbolna i može se ponavljati. Vrlo je
+                bitna za praćenje dinamike promjena, npr. krvarenja u mozak
+                tokom poroda, hidrocefalus i sl. Nije potrebna posebna priprema
+                djeteta.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Item 3 -->
+          <div class="service-item">
+            <div class="icon-container">
+              <i class="fa-solid fa-laptop-medical"></i>
+            </div>
+            <div class="content">
+              <h3>Ultrazvuk abdomena</h3>
+              <p>
+                Ultrazvučni pregled abdomena se može podijeliti na tzv.
+                ultrazvuk gornjeg i donjeg abdomena. Ultrazvuk gornjeg abdomena
+                je pregled koji se odnosi na organe smještene ispod dijafragme :
+                jetra, žučna kesa, gušterača, slezena,dalje bubrezi, aorta, može
+                se vizualizirati želudac i dijelovi probavne cijevi, te
+                eventualne patološke mase. 
+              </p>
+              <p>
+                Za ovaj pregled je bitno da bude na tašte, odnosno da se bar 4
+                do 5 sati prije pregleda ne uzima hrana ,zbog napunjenosti žučne
+                kese. Prisustvo zraka u crijevima bitno smanjuje kvalitet
+                nalaza, a to je također povezano sa ishranom, te i lagana dijeta
+                dan prije pregleda olakšava sam pregled.
+              </p>
+              <p>
+                Za ultrazvuk donjeg abdomena, odnosno male zdjelice, gdje se
+                prikazuje mokraćni mjehur, ovariji kod žena, odnosno prostata
+                kod muškaraca bitan je napunjen mokraćni mjehur. Zbog toga se
+                preporučuje 2 sata prije pregleda piti tekućinu i ne mokriti.
+                Kod određivanja reziduuma, odnosno urina koji zaostaje u
+                mokraćnom mjehuru po mokrenju, radi se snimanje prije i poslije
+                mokrenja.
+              </p>
+              <p>
+                Ultrazvučna pretraga crijeva, posebno kod djece, može dati
+                podatke o eventualnoj upali slijepog crijeva ali iziskuje
+                iskustvo ultrasoničara. Organi male zjelice mogu se pregledati i
+                posebnim sondama koje su u domeni ginekologa i urologa.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

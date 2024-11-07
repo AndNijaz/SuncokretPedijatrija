@@ -76,3 +76,70 @@
     height: 30rem;
   }
 }
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.icon-container {
+  background-color: var(--main-orange-500);
+  color: var(--main-orange-100);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.content h3 {
+  margin-top: 0;
+  font-size: 2.4rem;
+  color: var(--heading-main);
+}
+
+.content p {
+  margin: 10px 0;
+
+  font-size: 1.6rem;
+}
+
+.service-item:nth-child(2n) {
+  margin-left: 25rem; /* Adjust this value to move the item to the right */
+}
+
+.service-item p {
+  max-width: 50%;
+}
+.service-item:nth-child(2n) p {
+  max-width: 100%;
+}
+
+@media (max-width: 59em) {
+  .service-item {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  .service-item p {
+    max-width: 100%;
+  }
+  .service-item:nth-child(2n) {
+    margin-left: auto;
+  }
+}
+
+.section-pedijatrijski-pregledi {
+  padding: 0;
+}

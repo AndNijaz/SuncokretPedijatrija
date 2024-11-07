@@ -7,3 +7,11 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 var marker = L.marker([43.866, 18.398]).addTo(map);
+
+const header = document.querySelector(".header");
+
+const btnToggleNav = document.querySelector(".btn-mobile-nav");
+
+btnToggleNav.addEventListener("click", () =>
+  header.classList.toggle("nav-open")
+);
