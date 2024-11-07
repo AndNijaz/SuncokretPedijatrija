@@ -45,6 +45,10 @@ a:visited {
 .white-text {
   color: var(--white);
 }
+
+.text-primary {
+  color: var(--heading-main);
+}
 /* ---------------- */
 /* HEADINGS */
 /* ---------------- */
@@ -93,6 +97,10 @@ a:visited {
 }
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--2-cols-1-2 {
+  grid-template-columns: 1fr 2fr;
 }
 
 .grid--gap-standard {

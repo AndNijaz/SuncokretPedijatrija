@@ -35,15 +35,12 @@
   left: 50%;
   transform: translate(-50%, 0%);
   /* transform: translateY(-50%); */
-  z-index: 10;
+  z-index: 5;
   background: white;
   padding: 1.6rem 3.2rem;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   text-align: center;
-}
-
-@media (max-width: 84em) {
 }
 
 @media (max-width: 75em) {
@@ -142,4 +139,94 @@
 
 .section-pedijatrijski-pregledi {
   padding: 0;
+}
+
+.vaccination-title {
+  text-align: center;
+}
+
+.vaccination-schedule {
+  background-color: #fdd8c4;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  justify-self: end;
+}
+
+.vaccination-schedule ul {
+  list-style: none;
+  padding: 0;
+}
+
+.vaccination-schedule li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.vaccination-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4.4rem;
+
+  padding-left: 5rem;
+  padding-right: 20rem;
+}
+
+.white-circle {
+  display: flex;
+  background-color: var(--main-orange-100);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.white-circle i {
+  font-size: 20px;
+}
+
+.flex-list {
+  padding-left: 20px;
+}
+.medium-paragraph {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.flex-list li {
+  display: flex;
+
+  gap: 2rem;
+}
+
+@media (max-width: 84em) {
+  .vaccination-content.grid--2-cols-1-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .medium-paragraph {
+    max-width: 100%;
+  }
+
+  .vaccination-details {
+    padding: 0;
+  }
+  .vaccination-content {
+    width: 100%; /* Ensure the parent container spans the full width */
+  }
+  .vaccination-schedule {
+    padding: 20px;
+    justify-content: center;
+
+    border-radius: 10px;
+    min-width: 60%;
+    justify-self: center;
+    margin-bottom: 20px;
+  }
+
+  .flex-list {
+    max-width: min-content;
+    margin: 0 auto;
+  }
 }

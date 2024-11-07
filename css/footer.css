@@ -10,6 +10,12 @@
   column-gap: 6.4rem;
 }
 
+.footer-container {
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
 .footer-title {
   font-size: 1.8rem;
   font-weight: 500;
