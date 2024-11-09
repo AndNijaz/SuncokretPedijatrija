@@ -1,0 +1,60 @@
+.osoblje-img {
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.team-grid {
+  width: 100%;
+  align-items: center;
+}
+
+.desktop-image {
+  display: block;
+}
+
+.mobile-image {
+  display: none;
+}
+@media (max-width: 75em) {
+  .grid--2-cols.team-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .team-grid img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .team-grid .description {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+}
+
+.toggle-button {
+  border: none;
+}
+.toggle-text {
+  margin-top: 4rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  opacity: 0;
+}
+
+/* Show text when active */
+.toggle-text.active {
+  max-height: 100px; /* Adjust based on the amount of text */
+  opacity: 1;
+  transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+}
