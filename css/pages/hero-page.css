@@ -208,37 +208,6 @@
 }
 
 /* ---------------------------- */
-/* MAPA */
-/* ---------------------------- */
-.section-map {
-  padding: 0;
-  background-color: var(--main-orange-200);
-}
-
-.section-map .orange-text {
-  line-height: 2rem;
-}
-
-.section-map .wrapper {
-  padding: 9.6rem 6.4rem;
-}
-
-.section-map .wrapper .grid {
-  justify-items: end;
-  gap: 3.2rem;
-}
-
-.section-map .wrapper .grid img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.section-map .wrapper .grid img:nth-child(2),
-.section-map .wrapper .grid img:nth-child(4) {
-  justify-self: start;
-}
-
-/* ---------------------------- */
 /* RESPONSIVE */
 /* ---------------------------- */
 /* Responsive Breakpoints */
@@ -327,9 +296,6 @@
   }
   .section-team .wrapper {
     align-items: center;
-  }
-  .section-map > .grid {
-    grid-template-columns: repeat(1, 1fr) !important;
   }
 }
 

@@ -6,3 +6,17 @@
 .large-image {
   width: 100%;
 }
+
+.o-nama-grid {
+  align-items: center;
+  font-size: larger;
+}
+@media (max-width: 75em) {
+  .section-o-nama .grid--2-cols {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  .o-nama-grid img {
+    width: 100%;
+  }
+}
