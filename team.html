@@ -3,7 +3,487 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Naš tim</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+  
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/pages/about-us-page.css" />
+    <link rel="stylesheet" href="css/pages/blogs-page.css" />
+    <link rel="stylesheet" href="css/pages/cjenovnik-page.css" />
+    <link rel="stylesheet" href="css/pages/hero-page.css" />
+    <link rel="stylesheet" href="css/pages/services-page.css" />
+    <link rel="stylesheet" href="css/pages/team-page.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <!-- <div class="header-row"> -->
+      <a href="./index.html">
+        <img
+          src="./assets/logo-heading.svg"
+          alt="Suncokret logo"
+          class="header-logo"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="./index.html" class="main-nav-link">Početna</a></li>
+          <li>
+            <a href="#" class="main-nav-link">Usluge</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Naš tim</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Cjenovnik</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">O nama</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Blogovi</a>
+          </li>
+        </ul>
+        <a href="#contact" class="button-nav">Kontakt</a>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+      <!-- </div> -->
+    </header>
+
+    <section class="section section-osoblje">
+      <div class="container margin-bottom-lg">
+        <div class="wrapper text-center margin-bottom-lg">
+          <div class="position-relative">
+            <h2 class="orange-text">Tim</h2>
+            <img
+              src="./assets/doodle-subheading.svg"
+              alt="doodle-cirlce"
+              class="doodle-subheading"
+            />
+          </div>
+          <h1 class="heading-primary">
+            Naše <span class="blue-text">osoblje</span>
+          </h1>
+        </div>
+        <div class="grid grid--2-cols team-grid margin-bottom-md">
+          <div class="wrapper">
+            <p class="blue-text">
+              <strong>Specijalista pedijatar<br />Opća pedijatrija</strong>
+            </p>
+            <h1 class="heading-secondary margin-bottom-sm">
+              Dr. Evelina Čehajić
+            </h1>
+
+            <img
+              src="./assets/Dr-Evelina-Cehajic.jpg"
+              alt="Dr. Evelina Cehajic"
+              class="osoblje-img mobile-image margin-bottom-sm"
+            />
+
+            <p class="margin-bottom-xsm description">
+              <strong>Studij:</strong> Medicinski fakultet u Sarajevu
+              (1988–1992).
+            </p>
+            <p class="margin-bottom-xsm description">
+              <strong>Diplomirala:</strong> 1995. godine na Medicinskom
+              fakultetu u Zagrebu.
+            </p>
+            <p class="margin-bottom-xsm description">
+              <strong>Državni ispit:</strong> Položen u Češkoj 1996.
+            </p>
+            <p class="margin-bottom-xsm description">
+              <strong>Specijalizacija:</strong> Položen specijalistički ispit iz
+              pedijatrije u Republici Češkoj 2005.
+            </p>
+          </div>
+          <img
+            src="./assets/Dr-Evelina-Cehajic.jpg"
+            alt="Dr. Evelina Cehajic"
+            class="osoblje-img desktop-image"
+          />
+        </div>
+
+        <button
+          class="button centered-button toggle-button"
+          onclick="toggleText(1)"
+        >
+          Saznaj više
+        </button>
+        <div id="toggle-1" class="toggle-text">
+          <p>
+            Rođena je 1969. g u Sarajevu. Osnovnu i srednju školu završila u
+            Visokom. Studij na Medicinskom fakultetu u Sarajevu 1988.-1992.g.
+            Diplomirala 1995. g na Medicinskom fakultetu u Zagrebu. Državni
+            ispit položila u Republici Češkoj 1996.g. Specijalistički ispit iz
+            pedijatrije u Republici Češkoj položila 2005.g. Državni ispit u BiH
+            položila 2006.g . Specijalistički ispit iz pedijatrije u BiH
+            položila 2008.g. Edukaciju iz dječije pulmologije položila u
+            Sarajevu 2010.g. Edukaciju iz ultrazvuka položila u Sarajevu 2010.g.
+            Edukacija iz ultrazvuka kukova na Klinici za ortopediju i
+            traumatologiju pod mentorstvom Prof. dr. Ismeta Gavrankapetanovića
+            završila je 2011.g. Prestižni kurs ultrazvuka kukova pod mentorstvom
+            Prof. dr. Reinhard Graf 2011. U toku boravka Republici Češkoj dr
+            Evelina Čehajić radila je na Dječijem odjelu Univerzitetske bolnice
+            (Nemocnice na Bulovce) u Pragu. Osim opšte pedijatrije odjeljenje je
+            specijalizirano za alergologiju i astmu, te je iskustvo i
+            obrazovanje iz ove oblasti doktorica dopunila tokom edukacije u
+            Sarajevu. Tokom priprema za specijalistički ispit provela je 9
+            mjeseci edukacije na Pedijatrijskoj klinici u Sarajevu. U periodu
+            2006-2010. bila je zaposlena u DZ Novi Grad gdje je stekla iskustva
+            kao ambulantni ljekar u Dispanzeru za predškolsku djecu.
+            Ultrazvučnom dijagnostikom se bavi od 2010. g.
+          </p>
+        </div>
+      </div>
+
+      <div class="container margin-bottom-lg">
+        <div class="grid grid--2-cols team-grid margin-bottom-md">
+          <img
+            src="./assets/Dr-Ediba-Saracevic.jpg"
+            alt="Dr. Ediba Saracevic"
+            class="osoblje-img desktop-image"
+          />
+          <div class="wrapper">
+            <p class="blue-text">
+              <strong
+                >Subspecijalista pedijatar <br />Dječija pulmologija</strong
+              >
+            </p>
+            <h1 class="heading-secondary margin-bottom-sm">
+              Prof. Dr. Ediba Saračević
+            </h1>
+
+            <img
+              src="./assets/Dr-Ediba-Saracevic.jpg"
+              alt="Dr. Ediba Saracevic"
+              class="osoblje-img mobile-image margin-bottom-sm"
+            />
+
+            <p class="margin-bottom-xsm description">
+              <strong>Obrazovanje:</strong> Medicinski fakultet i
+              specijalizacija iz pedijatrije u Sarajevu.
+            </p>
+            <p class="margin-bottom-xsm description">
+              <strong>Magistarski i doktorski rad:</strong> Iz oblasti dječije
+              pulmologije.
+            </p>
+            <p class="margin-bottom-xsm description">
+              <strong>Autor knjige:</strong> "Astma škola".
+            </p>
+            <p class="margin-bottom-xsm description">
+              <strong>Organizator:</strong> Astma škole u Sarajevu od 1998.
+              godine.
+            </p>
+            <p class="margin-bottom-xsm description">
+              <strong>Stručni radovi:</strong> Objavila 50 radova u domaćim i
+              stranim časopisima.
+            </p>
+          </div>
+        </div>
+
+        <button
+          class="button centered-button toggle-button"
+          onclick="toggleText(2)"
+        >
+          Saznaj više
+        </button>
+        <div id="toggle-2" class="toggle-text">
+          <p>
+            Medicinski fakultet i specijalizaciju iz pedijatrije završila u
+            Sarajevu. Magistrirala i doktorirala iz oblasti dječije pulmologije.
+            Autor je knjige „Astma škola“ i organizator Astma škole u Sarajevu
+            od 1998g. Objavila je 50 stručnih radova kao autor i koautor u
+            domaćim i stranim časopisima. Učesnik u mnogobrojnim kongresima kod
+            nas i u svijetu. Edukaciju provela u Sarajevu, Zagrebu, Belgiji i
+            Njemačkoj. Tokom dugogodišnjeg rada na Pedijatrijskoj klinici bila
+            je profesorica na Medicinskom fakultetu u Sarajevu. Sada je vanredna
+            profesorica na Visokoj zdravstvenoj školi u Bihaću i Fakultetu
+            zdravstvenih studija u Vitezu. U Ordinaciji Suncokret angažirana kao
+            subspecijalista dječije pulmologije i konsultant iz oblasti opće
+            pedijatrije.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="container margin-bottom-lg">
+
+        <div class="grid grid--2-cols team-grid margin-bottom-md">
+          <div class="wrapper">
+            <p class="blue-text">
+              <strong>Specijalista radiolog<br />Dječiji radiolog</strong>
+            </p>
+            <h1 class="heading-secondary margin-bottom-sm">
+              Mr. Dr. Amra Džananović
+            </h1>
+
+            <img
+              src="./assets/Dr-Amra-Dzananovic.jpg"
+              alt="Dr. Amra Dzananovic"
+              class="osoblje-img mobile-image margin-bottom-sm"
+            />
+
+            <p class="margin-bottom-xsm description">
+              <strong>Diplomirala:</strong> Medicinski fakultet u Gracu, Austrija, 25. maja 1997.
+          </p>
+          <p class="margin-bottom-xsm description">
+              <strong>Pripravnički staž:</strong> Završila 12-mjesečni staž za doktora medicine.
+          </p>
+          <p class="margin-bottom-xsm description">
+              <strong>Stručni ispit:</strong> Položen u julu 1998. godine.
+          </p>
+          
+          </div>
+          <img
+            src="./assets/Dr-Amra-Dzananovic.jpg"
+            alt="Dr. Amra Dzananovic"
+            class="osoblje-img desktop-image"
+          />
+        </div>
+
+        <button
+          class="button centered-button toggle-button"
+          onclick="toggleText(3)"
+        >
+          Saznaj više
+        </button>
+        <div id="toggle-3" class="toggle-text">
+          <p>
+           
+Amra Džananović rođena je 25. maja 1970 godine u Sarajevu. Diplomirala je na Medicinskom fakultetu u Gracu  (Austrija) 25.05.1997 godine. Nakon obavljenog pripravničkog staža za doktora medicine u trajanju od 12 mjeseci, položila je stručni ispit u julu 1998 godine.
+
+Od jula 1998 godine-decembra 2004 zaposlena je kao doktor medicine u JU Dom zdravlja Kantona Sarajevo.
+
+Decembra 2004 dobila je specijalizaciju iz Dijagnostičke radiologije na Kliničkom Centru Univerziteta u Sarajevu, a specijalistički ispit iz Dijagnostičke radiologije položila je 01.06. 2009 godine.
+
+Od 05.01.2009-08.04 2009 godine provela je tromjesečnu edukaciju na Hacettepe Univerzitetskoj Klinici u Ankari, iz oblasti pedijatrijske radiologije.
+
+Aktivan je učesnik na kongresima Radiologije u zemlji i inozemstvu: Kongres radiologa Sarajevo 2008, 2012, Evropski Kongres radiologa 2009 i 2010 godine, Balkanski Kongres Radiologa 2012 godine, Evropski kongres prdijatrijskih radiologa 2013, 2014 i 2015 godine.
+
+Bila je učesnik brojnih stručnih kurseva iz oblasti pedijatrijske radiologije u Salzburgu, Jeni i Beču.
+
+U akademskoj 2010/2012 godini upisala je postdiplomski studij na Medicinskom fakultetu u Sarajevu – klinički smjer.
+
+Aktivno govori engleski i njemački jezik.
+
+26.03.2015 stekla zvanje magistra medicinskih nauka.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="container margin-bottom-lg">
+        <div class="grid grid--2-cols team-grid margin-bottom-md">
+          <img
+            src="./assets/Dr-Feriha-Hadzagic-Catibusic.jpg"
+            alt="Dr. Feriha Hadzagic-Catibusic"
+            class="osoblje-img desktop-image"
+          />
+          <div class="wrapper">
+            <p class="blue-text">
+              <strong
+                >Subspecijalista pedijatar <br />Dječija neurologija</strong
+              >
+            </p>
+            <h1 class="heading-secondary margin-bottom-sm">
+             Doc. Dr. Feriha Hadžagić-Ćatibušić         
+            </h1>
+
+            <img
+              src="./assets/Dr-Feriha-Hadzagic-Catibusic.jpg"
+              alt="Dr. Feriha Hadzagic-Catibusic"
+              class="osoblje-img mobile-image margin-bottom-sm"
+            />
+
+            <p class="margin-bottom-xsm description">
+              <strong>Diplomirala:</strong> na Medicinskom fakultetu UNSA 1984.
+          </p>
+          <p class="margin-bottom-xsm description">
+              <strong>Specijalizacija:</strong> iz pedijatrije, Sarajevo, 1995.
+          </p>
+          <p class="margin-bottom-xsm description">
+              <strong>Magistarski rad:</strong> "Ultrazvučna korelacija morfologije mozga i neurološkog nalaza kod dojenčadi s neurorazvojnim poremećajima", odbranjen 2002.
+          </p>
+          <p class="margin-bottom-xsm description">
+              <strong>Stručnost:</strong> Pedijatrija, neurorazvojni poremećaji kod dojenčadi.
+          </p>
+          
+          </div>
+        </div>
+
+        <button
+          class="button centered-button toggle-button"
+          onclick="toggleText(4)"
+        >
+          Saznaj više
+        </button>
+        <div id="toggle-4" class="toggle-text">
+          <p>
+            Diplomirala na Medicinskom fakultetu Univerziteta u Sarajevu 1984.godine, a  specijalistički ispit iz pedijatrije položila 1995.godine u Sarajevu.
+
+            Magistarski rad, pod naslovom  “ Ultrazvučna korelacija morfoloških karakteristika mozga i neurološkog nalaza kod dojenčadi sa neurorazvojnim poremećajima “odbranila  2002.godine na Medicinskom fakultetu Univerziteta u Sarajevu.
+            
+            Doktorsku disertacije, pod naslovom “ Korelacija neurološkog, neuroradiološkog i elektroencefalografskog nalaza kao prediktivni faktor u dijagnozi spastične hemipareze kod djece”,odbranila 2005.godine na Medicinskom fakultetu Univerziteta u Sarajevu.
+            
+            U nastavno zvanje docent na Katedri za pedijatriju Medicinskog fakulteta Univerziteta u Sarajevu izabrana 2008.god.
+            
+            Status subspecijalste neuropedijatra priznat  rješenjem Federalnog ministra zdravstva Federacije Bosne i Hercegovine.
+            
+            Od 1995. godine do danas radi na Neuropedijatrijskom odjeljenju Pedijatrijske klinike Kliničkog centra Univerziteta u Sarajevu.
+            
+            Autor i koautor preko 110 radova objavljenih u domaćim i stranim časopisima. Aktivno učestvovala u nizu domaćih i stranih kongresa. Nacionalni koordinator za Bosnu i Hercegovinu pri EACD ( European Academy for Childhood Disability). EACD je evropsko interdisciplinarno udruženje za djecu sa neurorazvojnim poremećajima.
+            
+            Koautor je jedne knjige, te autor više poglavlja u knjigama.
+            
+            Edukacije iz oblasti neuropedijatrije obavila na Kliničkom centru u Sarajevu, te  na Dječijim klinikama u Austriji, Belgiji i Sloveniji. Edukaciju iz oblasti ultrazvučnog ispitivanja mozga obavila na Univerzitetskoj dječijoj klinici u Grazu, Austrija.
+            
+            Član je  Udruženja pedijatara Bosne i Hercegovine, Udruženje dječijih neurologa u Bosni i Hercegovini, Internacionalnog udruženje dječijih neurologa (International Child Neurology Association -ICNA), Evropske akademije za djecu sa neurorazvojnim poremećajima  (European Academy for Childhood Disability -EACD)
+          </p>
+        </div>
+      </div>
+
+
+      </div>
+
+    </section>
+
+    <section class="section section-map">
+      <div class="grid grid--2-cols">
+        <div class="wrapper">
+          <h2 class="orange-text text-center">Lokacija</h2>
+          <h2 class="heading-primary text-center margin-bottom-sm">
+            Gdje nas možete pronaći
+          </h2>
+          <div class="grid grid--2-cols">
+            <img
+              src="assets/pedijatrija-suncokret-lokacija-1.jpg"
+              alt="Lokacija Pedijatrije Suncokret"
+            />
+            <img
+              src="assets/pedijatrija-suncokret-lokacija-2.jpg"
+              alt="Lokacija Pedijatrije Suncokret"
+            />
+            <img
+              src="assets/pedijatrija-suncokret-lokacija-3.jpg"
+              alt="Lokacija Pedijatrije Suncokret"
+            />
+            <img
+              src="assets/pedijatrija-suncokret-lokacija-4.jpg"
+              alt="Lokacija Pedijatrije Suncokret"
+            />
+          </div>
+        </div>
+        <!-- <div> -->
+        <div id="map"></div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-container grid grid--footer">
+        <div class="logo-col">
+          <a href="./index.html" class="footer-logo">
+            <img
+              src="./assets/logo-footer.svg"
+              alt="Checkify logo"
+              class="header-logo"
+            />
+          </a>
+          <div class="advertisement-row margin-bottom-md">
+            <img alt="asa-osiguranje" src="./assets/asa-osiguranje.jpg" />
+            <img alt="uniqa-osiguranje" src="./assets//uniqua-osiguranje.jpg" />
+          </div>
+          <p class="copyright">
+            Copyright &copy; 2023 by Suncokret, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="wrapper">
+          <p class="footer-title">Kontaktirajte nas</p>
+          <ul class="footer-nav">
+            <li>
+              <i class="fas fa-envelope"></i>
+              ordinacija@pedijatrija-suncokret.ba
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              033 266 266 <br />
+              062 274 034
+            </li>
+            <li>
+              <i class="fas fa-fax"></i>
+              033 266 265
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              Muhameda ef Pandže 67, 71000 Sarajevo
+            </li>
+          </ul>
+        </div>
+        <div class="wrapper">
+          <p class="footer-title">Usluge</p>
+          <ul class="footer-nav">
+            <li>Pedijatrijski pregledi</li>
+            <li>Savjetovališta</li>
+            <li>Ultrazvučna dijagnostika</li>
+            <li>Vakcinacija</li>
+            <li>Kućne posjete</li>
+          </ul>
+        </div>
+        <div class="wrapper">
+          <p class="footer-title">Posjete</p>
+          <ul class="footer-nav">
+            <li><a href="#pocetna">Početna</a></li>
+            <li><a href="#usluge">Usluge</a></li>
+            <li><a href="#nas-tim">Naš tim</a></li>
+            <li><a href="#cjenovnik">Cjenovnik</a></li>
+            <li><a href="#o-nama">O nama</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="inwolve">
+        <p>Copyright © 2024 developed by Inwolve</p>
+      </div>
+    </footer>
+
+    <script src="script/main.js"></script>
+    <script src="script/toggle-modal.js"></script>
+    <script src="script/header.js"></script>
+  </body>
 </html>

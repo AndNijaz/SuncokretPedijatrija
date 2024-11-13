@@ -45,6 +45,10 @@ a:visited {
 .white-text {
   color: var(--white);
 }
+
+.text-primary {
+  color: var(--heading-main);
+}
 /* ---------------- */
 /* HEADINGS */
 /* ---------------- */
@@ -93,6 +97,10 @@ a:visited {
 }
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--2-cols-1-2 {
+  grid-template-columns: 1fr 2fr;
 }
 
 .grid--gap-standard {
@@ -288,4 +296,57 @@ textarea {
   .grid--3-cols {
     grid-template-columns: repeat(1, 1fr) !important;
   }
+}
+
+/*
+MAP
+
+*/
+
+.section-map {
+  padding: 0;
+  background-color: var(--main-orange-200);
+}
+
+.section-map .orange-text {
+  line-height: 2rem;
+}
+
+.section-map .wrapper {
+  padding: 9.6rem 6.4rem;
+}
+
+.section-map .wrapper .grid {
+  justify-items: end;
+  gap: 3.2rem;
+}
+
+.section-map .wrapper .grid img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.section-map .wrapper .grid img:nth-child(2),
+.section-map .wrapper .grid img:nth-child(4) {
+  justify-self: start;
+}
+@media (max-width: 59em) {
+  .section-map > .grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+.overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 174, 58, 0.7987570028011204) 20%,
+    rgba(247, 174, 58, 0.4962359943977591) 100%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  backdrop-filter: blur(0.5px);
 }
