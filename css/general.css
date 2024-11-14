@@ -116,6 +116,11 @@ a:visited {
   font-size: 2rem;
   color: var(--white) !important;
   border-radius: 12px;
+  transition: all 300ms;
+}
+
+.button:hover {
+  background-color: #c6652e;
 }
 
 .centered-button {

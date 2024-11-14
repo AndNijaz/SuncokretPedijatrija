@@ -149,6 +149,15 @@
 .service-card {
   padding: 2rem;
   margin: 0 auto;
+  transition: all 300ms;
+  border-radius: 12px;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
+  /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.02); */
+  /* box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15); */
+  /* transform: translateY(-1.2rem); */
 }
 
 .service-category {
@@ -171,8 +180,9 @@
   background-color: var(--main-orange-200);
   background: url("../../assets/doodle-sqrl.svg"), var(--main-orange-200);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  /* background-size: 110% 110%; */
   background-position: center;
+  background-size: cover;
 }
 
 .section-team .blue-text {
@@ -190,6 +200,14 @@
 .section-team img {
   border-radius: 12px;
   width: 100%;
+}
+
+.team-link-img {
+  transition: all 300ms;
+}
+
+.team-link-img:hover {
+  transform: scale(1.1);
 }
 
 /* ---------------------------- */
