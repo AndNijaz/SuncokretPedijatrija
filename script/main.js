@@ -7,3 +7,14 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 var marker = L.marker([43.866, 18.398]).addTo(map);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".main-nav-link");
+  const currentPath = window.location.pathname;
+
+  links.forEach((link) => {
+    if (link.getAttribute("href") === `.${currentPath}`) {
+      link.classList.add("active");
+    }
+  });
+});

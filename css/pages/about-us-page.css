@@ -16,8 +16,17 @@
   background-color: var(--main-orange-200);
   background: url("../../assets/doodle-sqrl.svg"), var(--main-orange-200);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
   background-position: center;
+  background-size: cover;
+}
+
+.about-link-img {
+  transition: all 300ms;
+}
+
+.about-link-img:hover {
+  transform: scale(1.1);
 }
 
 .section-savjeti .wrapper:nth-child(2) {

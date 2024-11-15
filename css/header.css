@@ -29,6 +29,53 @@
   display: inline-block;
   font-weight: 500;
   font-size: 1.8rem;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.main-nav-link:hover {
+  color: var(--main-orange-500);
+}
+
+/* Active Link Style */
+.main-nav-link.active {
+  color: var(--main-orange-500); /* Change active link color */
+  font-weight: bold; /* Optional: make it bold */
+}
+
+/* Optional for button styling */
+.button-nav {
+  background-color: var(--main-orange-500);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button-nav:hover {
+  background-color: #d18d00;
+}
+
+/* Active Link Style with Doodle Image */
+.main-nav-link.active {
+  color: var(--main-orange-500); /* Active link color */
+  font-weight: bold; /* Optional: emphasize active link */
+  position: relative; /* Needed for positioning the doodle */
+}
+
+.main-nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 100%; /* Adjust the width of the doodle image */
+  height: 100%; /* Adjust the height of the doodle image */
+  background-image: url("../../assets/doodle-header-underline.svg"); /* Path to your doodle image */
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .btn-mobile-nav {
