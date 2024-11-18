@@ -1,0 +1,50 @@
+.blog-container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* padding: 20px; */
+  gap: 3.2rem;
+  grid-template-columns: repeat(3, 30rem);
+  grid-template-rows: repeat(4, 30rem);
+}
+.blog-card {
+  background-color: var(--main-orange-300);
+  border-radius: 12px;
+  padding: 1.6rem;
+  aspect-ratio: 1;
+}
+
+.blog-card:nth-child(4) {
+  grid-column: span 3;
+  /* grid-row: span 2; */
+  /* grid-row: 2/3 !important; */
+  /* grid-template-rows: 2/3; */
+  aspect-ratio: 0;
+}
+.blog-title {
+  color: var(--heading-main);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.blog-description {
+  /* klasa da ima u resp jer ce se morati smanjiti font ja msm */
+}
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 5px;
+}
+.pagination button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pagination button[disabled] {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
