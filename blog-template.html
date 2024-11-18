@@ -5,12 +5,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/general.css" />
-    <!-- Add your other stylesheets here -->
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/pages/about-us-page.css" />
+    <link rel="stylesheet" href="css/pages/blogs-page.css" />
+    <link rel="stylesheet" href="css/pages/cjenovnik-page.css" />
+    <link rel="stylesheet" href="css/pages/hero-page.css" />
+    <link rel="stylesheet" href="css/pages/services-page.css" />
+    <link rel="stylesheet" href="css/pages/team-page.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <header class="header">
-      <!-- Header code here -->
+      <!-- <div class="header-row"> -->
+      <a href="./index.html">
+        <img
+          src="./assets/logo-heading.svg"
+          alt="Suncokret logo"
+          class="header-logo"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="./index.html" class="main-nav-link">Početna</a></li>
+          <li>
+            <a href="./services.html" class="main-nav-link">Usluge</a>
+          </li>
+          <li>
+            <a href="./team.html" class="main-nav-link">Naš tim</a>
+          </li>
+          <li>
+            <a href="./pricing.html" class="main-nav-link">Cjenovnik</a>
+          </li>
+          <li>
+            <a href="./about.html" class="main-nav-link">O nama</a>
+          </li>
+          <li>
+            <a href="./blogs.html" class="main-nav-link">Blogovi</a>
+          </li>
+        </ul>
+        <a href="#footer" class="button-nav">Kontakt</a>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+      <!-- </div> -->
     </header>
 
     <main>
@@ -21,10 +94,107 @@
         </div>
       </section>
     </main>
+    <section class="section section-map">
+      <div class="grid grid--2-cols">
+        <div class="wrapper">
+          <h2 class="orange-text text-center">Lokacija</h2>
+          <h2 class="heading-primary text-center margin-bottom-sm">
+            Gdje nas možete pronaći
+          </h2>
+          <div class="grid grid--2-cols">
+            <img
+              src="assets/pedijatrija-suncokret-lokacija-1.jpg"
+              alt="Lokacija Pedijatrije Suncokret"
+            />
+            <img
+              src="assets/pedijatrija-suncokret-lokacija-2.jpg"
+              alt="Lokacija Pedijatrije Suncokret"
+            />
+            <img
+              src="assets/pedijatrija-suncokret-lokacija-3.jpg"
+              alt="Lokacija Pedijatrije Suncokret"
+            />
+            <img
+              src="assets/pedijatrija-suncokret-lokacija-4.jpg"
+              alt="Lokacija Pedijatrije Suncokret"
+            />
+          </div>
+        </div>
+        <!-- <div> -->
+        <div id="map"></div>
+        <!-- </div> -->
+      </div>
+    </section>
 
-    <footer class="footer-section">
-      <!-- Footer code here -->
+    <footer class="footer-section" id="footer">
+      <div class="footer-container grid grid--footer">
+        <div class="logo-col">
+          <a href="./index.html" class="footer-logo">
+            <img
+              src="./assets/logo-footer.svg"
+              alt="Checkify logo"
+              class="header-logo"
+            />
+          </a>
+          <div class="advertisement-row margin-bottom-md">
+            <img alt="asa-osiguranje" src="./assets/asa-osiguranje.jpg" />
+            <img alt="uniqa-osiguranje" src="./assets//uniqua-osiguranje.jpg" />
+          </div>
+          <p class="copyright">
+            Copyright &copy; 2023 by Suncokret, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="wrapper">
+          <p class="footer-title">Kontaktirajte nas</p>
+          <ul class="footer-nav">
+            <li>
+              <i class="fas fa-envelope"></i>
+              ordinacija@pedijatrija-suncokret.ba
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              033 266 266 <br />
+              062 274 034
+            </li>
+            <li>
+              <i class="fas fa-fax"></i>
+              033 266 265
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              Muhameda ef Pandže 67, 71000 Sarajevo
+            </li>
+          </ul>
+        </div>
+        <div class="wrapper">
+          <p class="footer-title">Usluge</p>
+          <ul class="footer-nav">
+            <li>Pedijatrijski pregledi</li>
+            <li>Savjetovališta</li>
+            <li>Ultrazvučna dijagnostika</li>
+            <li>Vakcinacija</li>
+            <li>Kućne posjete</li>
+          </ul>
+        </div>
+        <div class="wrapper">
+          <p class="footer-title">Posjete</p>
+          <ul class="footer-nav">
+            <li><a href="#pocetna">Početna</a></li>
+            <li><a href="#usluge">Usluge</a></li>
+            <li><a href="#nas-tim">Naš tim</a></li>
+            <li><a href="#cjenovnik">Cjenovnik</a></li>
+            <li><a href="#o-nama">O nama</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="inwolve">
+        <p>Copyright © 2024 developed by Inwolve</p>
+      </div>
     </footer>
+    <!-- <script src="script/blogs.js"></script> -->
+    <script src="script/header.js"></script>
+    <script src="script/main.js"></script>
 
     <script>
       // Load the blog details from the API using the blog ID from query parameters

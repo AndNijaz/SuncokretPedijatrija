@@ -300,6 +300,18 @@
   .section-team .wrapper {
     align-items: center;
   }
+  .doodle-circle-2 {
+    top: 20% !important;
+    left: 34% !important;
+  }
+  .doodle-circle-3 {
+    top: 32% !important;
+    left: 28% !important;
+  }
+  .doodle-circle-4 {
+    top: 53% !important;
+    left: 28% !important;
+  }
 }
 
 @media (max-width: 44em) {
@@ -332,6 +344,14 @@
   }
   .section-team .wrapper img {
     display: none !important;
+  }
+  .doodle-circle-2 {
+    top: 20% !important;
+    left: 37% !important;
+  }
+  .doodle-circle-4 {
+    top: 66% !important;
+    left: -2% !important;
   }
 }
 
