@@ -375,3 +375,15 @@
 .section-o-nama .o-nama-img {
   width: 100%;
 }
+
+.doodle-circle-2 {
+  top: 22%;
+  left: 38%;
+  width: 28% !important;
+}
+
+.doodle-circle-4 {
+  top: 67%;
+  left: -2%;
+  width: 30% !important;
+}

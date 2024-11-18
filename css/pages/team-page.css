@@ -6,6 +6,11 @@
 .team-grid {
   width: 100%;
   align-items: center;
+  gap: 6.4rem;
+}
+
+.team-grid img {
+  justify-self: center;
 }
 
 .desktop-image {
@@ -20,6 +25,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
+    gap: 0px;
   }
 
   .team-grid img {
