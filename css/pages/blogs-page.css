@@ -1,4 +1,5 @@
 .blog-container {
+  justify-content: center;
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
@@ -12,6 +13,9 @@
   border-radius: 12px;
   padding: 1.6rem;
   aspect-ratio: 1;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .blog-card:nth-child(4) {
@@ -21,6 +25,12 @@
   /* grid-template-rows: 2/3; */
   aspect-ratio: 0;
 }
+.blog-card:nth-child(5) {
+  grid-column: span 2;
+  grid-row: span 2;
+  aspect-ratio: 0;
+}
+
 .blog-title {
   color: var(--heading-main);
   text-transform: uppercase;
@@ -32,19 +42,23 @@
   /* klasa da ima u resp jer ce se morati smanjiti font ja msm */
 }
 .pagination {
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  justify-content: center;
   display: flex;
-  gap: 5px;
+  gap: 0.4rem;
 }
 .pagination button {
-  padding: 10px 15px;
+  padding: 1.2rem 1.6rem;
   border: none;
-  background-color: #007bff;
+  background-color: var(--main-orange-500);
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
 .pagination button[disabled] {
-  background-color: #ddd;
+  background-color: #d3d3d3;
+  color: #707070;
+  /* background-color: var(--main-orange-300); */
+  /* color: var(--text-main); */
   cursor: not-allowed;
 }
