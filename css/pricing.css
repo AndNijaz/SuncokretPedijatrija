@@ -20,7 +20,7 @@
 }
 
 .accordion-content {
-  max-height: 0;
+  /* max-height: 0; IZMJENAAAAA IZ JSAAA*/
   overflow: hidden;
   background-color: var(--main-orange-100);
   transition: max-height 0.5s ease, padding 0.5s ease;
@@ -63,7 +63,7 @@
 }
 
 .accordion-content {
-  max-height: 0;
+  /* max-height: 0; IZMJENAAA IZ JSA*/
   overflow: hidden;
   background-color: var(--main-orange-100);
   transition: max-height 0.5s ease, padding 0.5s ease;
@@ -89,4 +89,47 @@
 }
 /* Responsive Styles */
 
-/* Large screens (84em and below) */
+/* izmjene da nema accordiona - ako bude trebao accordion, ispraviiti */
+.accordion-header {
+  padding: 2.4rem 1.6rem;
+  border-radius: 0px;
+  border-top-right-radius: 12px !important;
+  border-top-left-radius: 12px !important;
+  background-color: #fccbb0;
+  color: var(--heading-main);
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  border-radius: 0px;
+}
+
+.accordion-row {
+  /* border-bottom: 1px solid var(--heading-main); */
+  /* margin: 0 4.8rem !important; */
+}
+
+.temp-pric {
+  background-color: var(--main-orange-100);
+  /* gap: rem; */
+  padding-bottom: 1.6rem !important;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.accordion-row {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  margin: 0 3.2rem;
+
+  border-bottom: 2px solid #fccbb0;
+}
+
+.accordion-row p:nth-child(2) {
+  color: var(--heading-main);
+  font-weight: 600;
+}
