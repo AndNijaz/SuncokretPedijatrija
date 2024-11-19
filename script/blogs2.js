@@ -65,7 +65,8 @@ async function renderPagination() {
   });
   paginationContainer.appendChild(prevButton);
 
-  for (let i = 1; i <= totalPages; i++) {
+  for (let i = 1; i <= 5; i++) {
+    // Za sad nek stoji 5 zbog responsivea, svakako ih nece biti preko 50 sigurno
     const pageButton = document.createElement("button");
     pageButton.textContent = i;
     pageButton.disabled = i === currentPage;

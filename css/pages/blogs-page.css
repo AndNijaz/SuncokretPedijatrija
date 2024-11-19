@@ -63,3 +63,23 @@
   /* color: var(--text-main); */
   cursor: not-allowed;
 }
+
+@media (max-width: 85em) {
+  .blog-card:nth-child(4),
+  .blog-card:nth-child(5) {
+    grid-column: auto; /* Resets the grid-column property */
+    grid-row: auto; /* Resets the grid-row property */
+    aspect-ratio: auto; /* Resets the aspect-ratio property */
+  }
+  .blog-container {
+    grid-template-columns: repeat(2, 30rem);
+  }
+}
+@media (max-width: 44em) {
+  .blog-container {
+    grid-template-columns: repeat(1, 30rem);
+  }
+  .blog-card {
+    height: 30rem;
+  }
+}
