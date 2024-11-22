@@ -1,3 +1,8 @@
+.emphesize {
+  color: var(--heading-main);
+  font-weight: 600;
+}
+
 .image-container {
   position: relative;
   width: 100%;
@@ -112,14 +117,24 @@
   font-size: 1.6rem;
 }
 
-.service-item:nth-child(2n) {
-  margin-left: 25rem; /* Adjust this value to move the item to the right */
+.service-item:nth-child(3n) {
+  margin-left: 50rem; /* Adjust this value to move the item to the right */
+}
+.service-item:nth-child(4n) {
+  margin-left: 50rem; /* Adjust this value to move the item to the right */
+}
+
+.section-pedijatrijski-pregledi .service-item:last-child {
+  margin-left: 50rem;
 }
 
 .service-item p {
   max-width: 50%;
 }
-.service-item:nth-child(2n) p {
+.service-item:nth-child(3n) p {
+  max-width: 100%;
+}
+.service-item:nth-child(4n) p {
   max-width: 100%;
 }
 

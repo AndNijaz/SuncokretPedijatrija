@@ -397,13 +397,19 @@
 }
 
 .doodle-circle-2 {
-  top: 22%;
-  left: 38%;
-  width: 28% !important;
+  top: 58%;
+  left: -3%;
+  width: 29% !important;
+  /* height: 30%; */
+}
+
+.doodle-circle-3 {
+  width: 32% !important;
+  left: 38% !important;
 }
 
 .doodle-circle-4 {
-  top: 67%;
-  left: -2%;
-  width: 30% !important;
+  top: 40%;
+  left: 10%;
+  width: 45% !important;
 }

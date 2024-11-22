@@ -92,6 +92,7 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
+    <script defer src="script/lazy-loading.js"></script>
   </head>
   <body>
     <header class="header">
@@ -124,8 +125,10 @@
         <div class="carousel">
           <div class="carousel-slide">
             <img
-              src="./assets/pedijatrija-suncokret-carousel-1.jpg"
+              data-src="./assets/pedijatrija-suncokret-carousel-1.jpg"
+              src="./assets/lazy-pedijatrija-suncokret-carousel-1.jpg"
               alt="Slide 1"
+              class="lazy-img"
             />
             <div class="overlay"></div>
             <div class="carousel-content">
@@ -142,17 +145,22 @@
               <!-- <p>Professional care you can trust</p> -->
             </div>
           </div>
+
           <div class="carousel-slide">
             <img
-              src="./assets/pedijatrija-suncokret-carousel-2.jpg"
+              data-src="./assets/pedijatrija-suncokret-carousel-2.jpg"
+              src="./assets/lazy-pedijatrija-suncokret-carousel-2.jpg"
               alt="Slide 2"
+              class="lazy-img"
             />
             <div class="overlay"></div>
             <div class="carousel-content">
               <h2>
-                Naša igraonica će umanjiti
-                <span class="blue-text">stres</span> Vašeg
-                <span class="blue-text">djeteta</span> zbog dolaska ljekaru
+                U bojama Suncokreta nastojimo
+                <span class="blue-text">umanjiti</span>
+                <span class="blue-text">stres</span> dolaska ljekaru
+                <!-- <span class="blue-text">stres</span> Vašeg -->
+                <!-- <span class="blue-text">djeteta</span> zbog dolaska ljekaru -->
               </h2>
               <img
                 src="./assets/doodle-circle.svg"
@@ -162,16 +170,19 @@
               <!-- <p>Here to help you</p> -->
             </div>
           </div>
+
           <div class="carousel-slide">
             <img
-              src="./assets/pedijatrija-suncokret-carousel-3.jpg"
+              data-src="./assets/pedijatrija-suncokret-carousel-3.jpg"
+              src="./assets/lazy-pedijatrija-suncokret-carousel-3.jpg"
               alt="Slide 3"
+              class="lazy-img"
             />
             <div class="overlay"></div>
             <div class="carousel-content">
               <h2>
-                Mi brinemo za <span class="blue-text">zdravlje</span> Vašeg
-                djeteta
+                Nastojimo da se djeca i roditelji kod nas osjećaju
+                <span class="blue-text">dobro</span>
               </h2>
               <img
                 src="./assets/doodle-circle.svg"
@@ -181,16 +192,20 @@
               <!-- <p>State-of-the-art equipment</p> -->
             </div>
           </div>
+
           <div class="carousel-slide">
             <img
-              src="./assets/pedijatrija-suncokret-carousel-4.jpg"
+              data-src="./assets/pedijatrija-suncokret-carousel-4.jpg"
+              src="./assets/lazy-pedijatrija-suncokret-carousel-4.jpg"
               alt="Slide 3"
+              class="lazy-img"
             />
             <div class="overlay"></div>
             <div class="carousel-content">
               <h2>
-                U prijatnoj atmosferi zajedno ćemo
-                <span class="blue-text">savladati</span> bolest i strah
+                Za male pacijente smo pripremili simbolične
+                <span class="blue-text">nagrade</span> za
+                <span class="blue-text">hrabrost</span>
               </h2>
               <img
                 src="./assets/doodle-circle.svg"
@@ -225,19 +240,31 @@
             <li>
               <div class="hero-box-list-item">
                 <ion-icon name="checkmark-outline" class="checkmark"></ion-icon>
-                <p>Pedijatrijski pregledi</p>
+                <p>Pedijatrija</p>
               </div>
             </li>
             <li>
               <div class="hero-box-list-item">
                 <ion-icon name="checkmark-outline" class="checkmark"></ion-icon>
-                <p>Savjetovališta</p>
+                <p>Neuropedijatrija</p>
+              </div>
+            </li>
+            <li>
+              <div class="hero-box-list-item">
+                <ion-icon name="checkmark-outline" class="checkmark"></ion-icon>
+                <p>Pulmolo–alergologija</p>
               </div>
             </li>
             <li>
               <div class="hero-box-list-item">
                 <ion-icon name="checkmark-outline" class="checkmark"></ion-icon>
                 <p>Ultrazvučna dijagnostika</p>
+              </div>
+            </li>
+            <li>
+              <div class="hero-box-list-item">
+                <ion-icon name="checkmark-outline" class="checkmark"></ion-icon>
+                <p>Mala laboratorija</p>
               </div>
             </li>
             <li>
@@ -359,21 +386,38 @@
         </div>
         <div class="wrapper grid grid--2-cols">
           <a href="./team.html#evelina" class="team-link-img">
-            <img src="assets/Dr-Evelina-Cehajic.jpg" alt="Evelina Cehajic" />
+            <img
+              data-src="assets/Dr-Evelina-Cehajic.jpg"
+              src="assets/lazy-Dr-Evelina-Cehajic.jpg"
+              alt="Evelina Cehajic"
+              class="lazy-img"
+            />
           </a>
 
           <a href="./team.html#ediba" class="team-link-img">
-            <img src="assets/Dr-Ediba-Saracevic.jpg" alt="Dr-Ediba-Saracevic" />
+            <img
+              data-src="assets/Dr-Ediba-Saracevic.jpg"
+              src="assets/lazy-Dr-Ediba-Saracevic.jpg"
+              alt="Dr-Ediba-Saracevic"
+              class="lazy-img"
+            />
           </a>
 
           <a href="/team.html#amra" class="team-link-img">
-            <img src="assets/Dr-Amra-Dzananovic.jpg" alt="Dr-Amra-Dzananovic" />
+            <img
+              data-src="assets/Dr-Amra-Dzananovic.jpg"
+              src="assets/lazy-Dr-Amra-Dzananovic.jpg"
+              alt="Dr-Amra-Dzananovic"
+              class="lazy-img"
+            />
           </a>
 
           <a href="/team.html#feriha" class="team-link-img">
             <img
+              data-src="assets/lazy-Dr-Feriha-Hadzagic-Catibusic.jpg"
               src="assets/Dr-Feriha-Hadzagic-Catibusic.jpg"
               alt="Dr-Feriha-Catibusic"
+              class="lazy-img"
             />
           </a>
         </div>
@@ -388,7 +432,7 @@
             <img
               src="./assets/doodle-subheading.svg"
               alt="doodle-cirlce"
-              class="doodle-subheading"
+              class="doodle-subheading lazy-img"
             />
           </div>
           <h1 class="heading-primary">
@@ -398,9 +442,10 @@
 
         <div class="grid grid--2-cols grid--gap-standard">
           <img
-            src="./assets//pedijatrija-suncokret-ordinacija-1.jpg"
+            data-src="./assets/pedijatrija-suncokret-ordinacija-1.jpg"
+            src="./assets/lazy-pedijatrija-suncokret-ordinacija-1.jpg"
             alt="Ordinacija"
-            class="o-nama-img border-radius"
+            class="o-nama-img border-radius lazy-img"
           />
           <div>
             <h2 class="heading-secondary">Suncokret</h2>
@@ -411,9 +456,10 @@
             </p>
           </div>
           <img
-            src="./assets//pedijatrija-suncokret-ordinacija-2.jpg"
+            data-src="./assets/pedijatrija-suncokret-ordinacija-2.jpg"
+            src="./assets/lazy-pedijatrija-suncokret-ordinacija-2.jpg"
             alt="Ordinacija"
-            class="o-nama-img border-radius"
+            class="o-nama-img border-radius lazy-img"
           />
           <div>
             <h2 class="heading-secondary">Bolesti i ljekari</h2>
@@ -427,9 +473,10 @@
             </p>
           </div>
           <img
-            src="./assets//pedijatrija-suncokret-ordinacija-3.jpg"
+            data-src="./assets/pedijatrija-suncokret-ordinacija-3.jpg"
+            src="./assets/lazy-pedijatrija-suncokret-ordinacija-3.jpg"
             alt="Ordinacija"
-            class="o-nama-img border-radius"
+            class="o-nama-img border-radius lazy-img"
           />
           <div>
             <h2 class="heading-secondary">Pregled</h2>
@@ -455,20 +502,28 @@
           </h2>
           <div class="grid grid--2-cols">
             <img
-              src="assets/pedijatrija-suncokret-lokacija-1.jpg"
+              data-src="assets/pedijatrija-suncokret-lokacija-1.jpg"
+              src="assets/lazy-pedijatrija-suncokret-lokacija-1.jpg"
               alt="Lokacija Pedijatrije Suncokret"
+              class="lazy-img"
             />
             <img
-              src="assets/pedijatrija-suncokret-lokacija-2.jpg"
+              data-src="assets/pedijatrija-suncokret-lokacija-2.jpg"
+              src="assets/lazy-pedijatrija-suncokret-lokacija-2.jpg"
               alt="Lokacija Pedijatrije Suncokret"
+              class="lazy-img"
             />
             <img
-              src="assets/pedijatrija-suncokret-lokacija-3.jpg"
+              data-src="assets/pedijatrija-suncokret-lokacija-3.jpg"
+              src="assets/lazy-pedijatrija-suncokret-lokacija-3.jpg"
               alt="Lokacija Pedijatrije Suncokret"
+              class="lazy-img"
             />
             <img
-              src="assets/pedijatrija-suncokret-lokacija-4.jpg"
+              data-src="assets/pedijatrija-suncokret-lokacija-4.jpg"
+              src="assets/lazy-pedijatrija-suncokret-lokacija-4.jpg"
               alt="Lokacija Pedijatrije Suncokret"
+              class="lazy-img"
             />
           </div>
         </div>
@@ -489,8 +544,18 @@
             />
           </a>
           <div class="advertisement-row margin-bottom-md">
-            <img alt="asa-osiguranje" src="./assets/asa-osiguranje.jpg" />
-            <img alt="uniqa-osiguranje" src="./assets//uniqua-osiguranje.jpg" />
+            <img
+              alt="asa-osiguranje"
+              data-src="./assets/asa-osiguranje.jpg"
+              src="./assets/lazy-asa-osiguranje.jpg"
+              class="lazy-img"
+            />
+            <img
+              alt="uniqa-osiguranje"
+              data-src="./assets/uniqua-osiguranje.jpg"
+              src="./assets/lazy-uniqua-osiguranje.jpg"
+              class="lazy-img"
+            />
           </div>
           <p class="copyright">
             Copyright &copy; 2023 by Suncokret, Inc. All rights reserved.

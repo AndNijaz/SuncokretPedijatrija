@@ -1,75 +1,53 @@
-.osoblje-img {
-  max-width: 400px;
-  border-radius: 12px;
+.section-osoblje .grid {
+  gap: 0.8rem;
 }
 
-.team-grid {
+.team-member {
+  padding: 1.6rem;
+}
+
+.team-member img {
   width: 100%;
-  align-items: center;
-  gap: 6.4rem;
-}
-
-.team-grid img {
-  justify-self: center;
-}
-
-.desktop-image {
-  display: block;
-}
-
-.mobile-image {
-  display: none;
-}
-@media (max-width: 75em) {
-  .grid--2-cols.team-grid {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    text-align: center;
-    gap: 0px;
-  }
-
-  .team-grid img {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .team-grid .description {
-    text-align: left;
-    padding-left: 20px;
-  }
-
-  .desktop-image {
-    display: none;
-  }
-
-  .mobile-image {
-    display: block;
-  }
-}
-
-.toggle-button {
-  border: none;
-}
-.toggle-text {
-  margin-top: 4rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-  opacity: 0;
-}
-
-/* Show text when active */
-.toggle-text.active {
-  background-color: var(--main-orange-100);
-  padding: 1.6rem 2.4rem;
   border-radius: 12px;
-  max-height: fit-content; /* Adjust based on the amount of text */
-  opacity: 1;
-  transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+  /* margin-bottom: 0.8rem; */
 }
 
-@media (max-width: 34em) {
-  .mobile-hidden {
-    display: none;
-  }
+.team-member .heading-tertiary {
+  color: var(--heading-main);
+  line-height: 3rem;
+  font-size: 2.6rem !important;
+  margin-bottom: 0.8rem;
+  font-weight: 800;
+}
+.team-title {
+  color: var(--heading-main);
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin-bottom: 1.6rem;
+  opacity: 80%;
+  /* color: var(--main-orange-500); */
+}
+
+.section-osoblje
+  .container:nth-child(2)
+  .team-member:nth-child(3)
+  .heading-tertiary {
+  font-size: 2rem !important;
+}
+
+.team-subheading {
+  color: var(--accent-blue);
+}
+
+.team-member ul {
+  margin-left: 1.6rem;
+  /* list-style: none; */
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+#sanela {
+  grid-column: 2/3;
 }
