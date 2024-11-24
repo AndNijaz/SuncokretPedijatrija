@@ -51,3 +51,27 @@
 #sanela {
   grid-column: 2/3;
 }
+
+@media (max-width: 85em) {
+}
+
+@media (max-width: 75em) {
+}
+
+@media (max-width: 59em) {
+  .grid--4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  #sanela {
+    grid-column: 1/2;
+  }
+}
+
+@media (max-width: 44em) {
+}
+
+@media (max-width: 34em) {
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+}

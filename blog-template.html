@@ -12,14 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/general.css" />
-
     <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/pages/about-us-page.css" />
     <link rel="stylesheet" href="css/pages/blogs-page.css" />
-    <link rel="stylesheet" href="css/pages/cjenovnik-page.css" />
-    <link rel="stylesheet" href="css/pages/hero-page.css" />
-    <link rel="stylesheet" href="css/pages/services-page.css" />
-    <link rel="stylesheet" href="css/pages/team-page.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
 
@@ -89,7 +83,7 @@
     <main>
       <div class="container margin-bottom-lg">
         <img
-          src="./assets/blog-img.png"
+          src="./assets/blog-img.webp"
           alt="Dr-Evelina-Cehajic"
           class="blog-img"
         />
@@ -98,7 +92,7 @@
         </h1>
       </div>
 
-      <section class="section-blog-details">
+      <section class="section section-blog-details">
         <div class="blog-details-container container">
           <h1 id="blog-title" class="blog-title"></h1>
           <p id="blog-body" class="blog-body"></p>
@@ -114,26 +108,24 @@
           </h2>
           <div class="grid grid--2-cols">
             <img
-              src="assets/pedijatrija-suncokret-lokacija-1.jpg"
+              src="assets/pedijatrija-suncokret-lokacija-1.webp"
               alt="Lokacija Pedijatrije Suncokret"
             />
             <img
-              src="assets/pedijatrija-suncokret-lokacija-2.jpg"
+              src="assets/pedijatrija-suncokret-lokacija-2.webp"
               alt="Lokacija Pedijatrije Suncokret"
             />
             <img
-              src="assets/pedijatrija-suncokret-lokacija-3.jpg"
+              src="assets/pedijatrija-suncokret-lokacija-3.webp"
               alt="Lokacija Pedijatrije Suncokret"
             />
             <img
-              src="assets/pedijatrija-suncokret-lokacija-4.jpg"
+              src="assets/pedijatrija-suncokret-lokacija-4.webp"
               alt="Lokacija Pedijatrije Suncokret"
             />
           </div>
         </div>
-        <!-- <div> -->
         <div id="map"></div>
-        <!-- </div> -->
       </div>
     </section>
 
@@ -148,8 +140,8 @@
             />
           </a>
           <div class="advertisement-row margin-bottom-md">
-            <img alt="asa-osiguranje" src="./assets/asa-osiguranje.jpg" />
-            <img alt="uniqa-osiguranje" src="./assets//uniqua-osiguranje.jpg" />
+            <img alt="asa-osiguranje" src="./assets/asa-osiguranje.webp" />
+            <img alt="uniqa-osiguranje" src="./assets//uniqua-osiguranje.webp" />
           </div>
           <p class="copyright">
             Copyright &copy; 2023 by Suncokret, Inc. All rights reserved.
@@ -204,12 +196,11 @@
         <p>Copyright © 2024 developed by Inwolve</p>
       </div>
     </footer>
-    <!-- <script src="script/blogs.js"></script> -->
+    <script src="script/reveal.js"></script>
     <script src="script/header.js"></script>
     <script src="script/main.js"></script>
 
     <script>
-      // Load the blog details from the API using the blog ID from query parameters
       document.addEventListener("DOMContentLoaded", async () => {
         const params = new URLSearchParams(window.location.search);
         const blogId = params.get("blogId");
@@ -240,6 +231,5 @@
         }
       });
     </script>
-    <script src="script/loading.js"></script>
   </body>
 </html>

@@ -12,6 +12,10 @@
   font-size: larger;
 }
 
+.o-nama-grid img {
+  justify-self: center;
+}
+
 .section-savjeti {
   background-color: var(--main-orange-200);
   background: url("../../assets/doodle-sqrl.svg"), var(--main-orange-200);
@@ -75,7 +79,7 @@
 
 @media (max-width: 75em) {
   .section-o-nama .grid--2-cols {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     margin: 0 auto;
   }
   .o-nama-grid img {
@@ -95,6 +99,9 @@
   .section-savjeti .container {
     grid-template-columns: 1fr;
   }
+  .o-nama-grid .wrapper p {
+    margin-bottom: 2rem !important;
+  }
 }
 
 @media (max-width: 59em) {
@@ -106,6 +113,9 @@
   }
   .doctors-grid .odd {
     justify-self: center;
+  }
+  .section-o-nama .grid--2-cols {
+    grid-template-columns: 1fr;
   }
 }
 

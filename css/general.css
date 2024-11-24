@@ -202,9 +202,6 @@ a:visited {
   width: 100%;
 }
 
-."" {
-  filter: blur(20px);
-}
 .border-radius {
   border-radius: 12px;
 }
@@ -218,6 +215,15 @@ a:visited {
 /* ---------------- */
 section {
   padding: 9.6rem 0rem;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 /* ---------------- */

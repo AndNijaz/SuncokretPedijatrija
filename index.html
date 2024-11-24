@@ -26,7 +26,7 @@
     />
     <meta
       property="og:image"
-      content="https://example.com/assets/suncokret-og-image.jpg"
+      content="https://example.com/assets/suncokret-og-image.webp"
     />
     <meta property="og:url" content="https://example.com" />
     <meta property="og:type" content="website" />
@@ -41,7 +41,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://example.com/assets/suncokret-twitter-image.jpg"
+      content="https://example.com/assets/suncokret-twitter-image.webp"
     />
     <link
       rel="icon"
@@ -50,6 +50,8 @@
       href="./assets/favicon.svg"
     />
 
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -57,26 +59,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/general.css" />
-
     <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/pages/about-us-page.css" />
-    <link rel="stylesheet" href="css/pages/blogs-page.css" />
-    <link rel="stylesheet" href="css/pages/cjenovnik-page.css" />
     <link rel="stylesheet" href="css/pages/hero-page.css" />
-    <link rel="stylesheet" href="css/pages/services-page.css" />
-    <link rel="stylesheet" href="css/pages/team-page.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
 
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
     ></script>
+
     <script
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
@@ -92,7 +84,6 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
-    <script defer src="script/loading.js"></script>
   </head>
   <body>
     <header class="header">
@@ -125,7 +116,7 @@
         <div class="carousel">
           <div class="carousel-slide">
             <img
-              src="./assets/pedijatrija-suncokret-carousel-1.jpg"
+              src="./assets/pedijatrija-suncokret-carousel-1.webp"
               alt="Slide
             1"
             />
@@ -147,7 +138,7 @@
 
           <div class="carousel-slide">
             <img
-              src="./assets/pedijatrija-suncokret-carousel-2.jpg"
+              src="./assets/pedijatrija-suncokret-carousel-2.webp"
               alt="Slide
             2"
             />
@@ -157,8 +148,7 @@
                 U bojama Suncokreta nastojimo
                 <span class="blue-text">umanjiti</span>
                 <span class="blue-text">stres</span> dolaska ljekaru
-                <!-- <span class="blue-text">stres</span> Vašeg -->
-                <!-- <span class="blue-text">djeteta</span> zbog dolaska ljekaru -->
+
               </h2>
               <img
                 src="./assets/doodle-circle.svg"
@@ -171,7 +161,7 @@
 
           <div class="carousel-slide">
             <img
-              src="./assets/pedijatrija-suncokret-carousel-3.jpg"
+              src="./assets/pedijatrija-suncokret-carousel-3.webp"
               alt="Slide
             3"
             />
@@ -186,13 +176,12 @@
                 alt="doodle-cirlce"
                 class="doodle-circle doodle-circle-3"
               />
-              <!-- <p>State-of-the-art equipment</p> -->
             </div>
           </div>
 
           <div class="carousel-slide">
             <img
-              src="./assets/pedijatrija-suncokret-carousel-4.jpg"
+              src="./assets/pedijatrija-suncokret-carousel-4.webp"
               alt="Slide
             3"
             />
@@ -208,17 +197,16 @@
                 alt="doodle-cirlce"
                 class="doodle-circle doodle-circle-4"
               />
-              <!-- <p>State-of-the-art equipment</p> -->
             </div>
           </div>
         </div>
 
-        <button class="carousel-button prev">
+        <button class="carousel-button prev" aria-label="previous-button">
           <svg viewBox="0 0 24 24">
             <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
           </svg>
         </button>
-        <button class="carousel-button next">
+        <button class="carousel-button next" aria-label="next-button">
           <svg viewBox="0 0 24 24">
             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
           </svg>
@@ -340,7 +328,7 @@
       </div>
     </section>
 
-    <section class="section-usluge">
+    <section class="section section-usluge">
       <div class="container">
         <div class="wrapper text-center margin-bottom-md">
           <div class="position-relative">
@@ -351,9 +339,9 @@
               class="doodle-subheading"
             />
           </div>
-          <h1 class="heading-primary">
+          <h2 class="heading-primary">
             Usluge koje <span class="blue-text">pružamo</span>
-          </h1>
+          </h2>
         </div>
         <div id="service-container" class="service-grid margin-bottom-sm"></div>
 
@@ -361,7 +349,7 @@
       </div>
     </section>
 
-    <section class="section-team">
+    <section class="section section-team">
       <div class="container grid grid--2-cols">
         <div class="wrapper">
           <span class="blue-text">Tim</span>
@@ -382,20 +370,20 @@
         </div>
         <div class="wrapper grid grid--2-cols">
           <a href="./team.html#evelina" class="team-link-img">
-            <img src="assets/Dr-Evelina-Cehajic.jpg" alt="Evelina Cehajic" />
+            <img src="assets/Dr-Evelina-Cehajic.webp" alt="Evelina Cehajic" />
           </a>
 
           <a href="./team.html#ediba" class="team-link-img">
-            <img src="assets/Dr-Ediba-Saracevic.jpg" alt="Dr-Ediba-Saracevic" />
+            <img src="assets/Dr-Ediba-Saracevic.webp" alt="Dr-Ediba-Saracevic" />
           </a>
 
           <a href="/team.html#amra" class="team-link-img">
-            <img src="assets/Dr-Amra-Dzananovic.jpg" alt="Dr-Amra-Dzananovic" />
+            <img src="assets/Dr-Amra-Dzananovic.webp" alt="Dr-Amra-Dzananovic" />
           </a>
 
           <a href="/team.html#feriha" class="team-link-img">
             <img
-              src="assets/Dr-Feriha-Hadzagic-Catibusic.jpg"
+              src="assets/Dr-Feriha-Hadzagic-Catibusic.webp"
               alt="Dr-Feriha-Catibusic"
             />
           </a>
@@ -403,7 +391,7 @@
       </div>
     </section>
 
-    <section class="section-o-nama">
+    <section class="section section-o-nama">
       <div class="container">
         <div class="wrapper text-center margin-bottom-md">
           <div class="position-relative">
@@ -414,14 +402,14 @@
               class="doodle-subheading"
             />
           </div>
-          <h1 class="heading-primary">
+          <h2 class="heading-primary">
             Dobro došli u našu <span class="blue-text">ordinaciju</span>
-          </h1>
+          </h2>
         </div>
 
         <div class="grid grid--2-cols grid--gap-standard">
           <img
-            src="./assets/pedijatrija-suncokret-ordinacija-1.jpg"
+            src="./assets/pedijatrija-suncokret-ordinacija-1.webp"
             alt="Ordinacija"
             class="o-nama-img border-radius"
           />
@@ -434,7 +422,7 @@
             </p>
           </div>
           <img
-            src="./assets/pedijatrija-suncokret-ordinacija-2.jpg"
+            src="./assets/pedijatrija-suncokret-ordinacija-2.webp"
             alt="Ordinacija"
             class="o-nama-img border-radius"
           />
@@ -450,7 +438,7 @@
             </p>
           </div>
           <img
-            src="./assets/pedijatrija-suncokret-ordinacija-3.jpg"
+            src="./assets/pedijatrija-suncokret-ordinacija-3.webp"
             alt="Ordinacija"
             class="o-nama-img border-radius"
           />
@@ -478,22 +466,22 @@
           </h2>
           <div class="grid grid--2-cols">
             <img
-              src="assets/pedijatrija-suncokret-lokacija-1.jpg"
+              src="assets/pedijatrija-suncokret-lokacija-1.webp"
               alt="Lokacija
             Pedijatrije Suncokret"
             />
             <img
-              src="assets/pedijatrija-suncokret-lokacija-2.jpg"
+              src="assets/pedijatrija-suncokret-lokacija-2.webp"
               alt="Lokacija
             Pedijatrije Suncokret"
             />
             <img
-              src="assets/pedijatrija-suncokret-lokacija-3.jpg"
+              src="assets/pedijatrija-suncokret-lokacija-3.webp"
               alt="Lokacija
             Pedijatrije Suncokret"
             />
             <img
-              src="assets/pedijatrija-suncokret-lokacija-4.jpg"
+              src="assets/pedijatrija-suncokret-lokacija-4.webp"
               alt="Lokacija
             Pedijatrije Suncokret"
             />
@@ -516,8 +504,8 @@
             />
           </a>
           <div class="advertisement-row margin-bottom-md">
-            <img alt="asa-osiguranje" src="./assets/asa-osiguranje.jpg" />
-            <img alt="uniqa-osiguranje" src="./assets/uniqua-osiguranje.jpg" />
+            <img alt="asa-osiguranje" src="./assets/asa-osiguranje.webp" />
+            <img alt="uniqa-osiguranje" src="./assets/uniqua-osiguranje.webp" />
           </div>
           <p class="copyright">
             Copyright &copy; 2023 by Suncokret, Inc. All rights reserved.
@@ -573,6 +561,7 @@
       </div>
     </footer>
 
+    <script src="script/reveal.js"></script>
     <script src="script/main.js"></script>
     <script src="script/header.js"></script>
     <script src="script/hero-services.js"></script>
