@@ -20,7 +20,6 @@
   background-color: var(--main-orange-200);
   background: url("../../assets/doodle-sqrl.svg"), var(--main-orange-200);
   background-repeat: no-repeat;
-  /* background-size: 100% 100%; */
   background-position: center;
   background-size: cover;
 }
@@ -122,6 +121,9 @@
 @media (max-width: 34em) {
   .doctors-grid img {
     width: 100%;
+  }
+  .section-savjeti {
+    background-size: 240% 240%;
   }
 }
 
