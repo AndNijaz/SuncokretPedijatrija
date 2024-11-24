@@ -61,6 +61,14 @@
   .image-container img {
     height: 40rem;
   }
+  /*  */
+
+  .vaccination-content.grid--2-cols-1-2 {
+    gap: 3.2rem;
+    /* grid-template-columns: 1fr !important; */
+    /* grid-template-columns: 30% 1fr; */
+    /* grid-template-columns: 1fr; */
+  }
 }
 
 @media (max-width: 44em) {
@@ -70,6 +78,11 @@
   .image-container .text-overlay {
     font-size: 2rem;
     line-height: 3rem;
+  }
+  .vaccination-content.grid--2-cols-1-2 {
+    grid-template-columns: 1fr;
+  }
+  .vaccination-schedule {
   }
 }
 
@@ -117,25 +130,45 @@
   font-size: 1.6rem;
 }
 
+/*
 .service-item:nth-child(3n) {
-  margin-left: 50rem; /* Adjust this value to move the item to the right */
+  margin-left: 50rem; 
 }
 .service-item:nth-child(4n) {
-  margin-left: 50rem; /* Adjust this value to move the item to the right */
+  margin-left: 50rem; 
 }
 
 .section-pedijatrijski-pregledi .service-item:last-child {
   margin-left: 50rem;
 }
+*/
+.service-item:nth-child(3) {
+  margin-left: 50rem;
+}
+.service-item:nth-child(4) {
+  margin-left: 50rem;
+}
+.service-item:nth-child(7) {
+  margin-left: 50rem;
+}
+.service-item:nth-child(8) {
+  margin-left: 50rem;
+}
+.service-item:nth-child(3) p {
+  max-width: 100%;
+}
+.service-item:nth-child(4) p {
+  max-width: 100%;
+}
+.service-item:nth-child(7) p {
+  max-width: 100%;
+}
+.service-item:nth-child(8) p {
+  max-width: 100%;
+}
 
 .service-item p {
   max-width: 50%;
-}
-.service-item:nth-child(3n) p {
-  max-width: 100%;
-}
-.service-item:nth-child(4n) p {
-  max-width: 100%;
 }
 
 @media (max-width: 59em) {
@@ -147,8 +180,29 @@
   .service-item p {
     max-width: 100%;
   }
-  .service-item:nth-child(2n) {
-    margin-left: auto;
+  .service-item:nth-child(3) {
+    margin-left: auto !important;
+  }
+  .service-item:nth-child(4) {
+    margin-left: auto !important;
+  }
+  .service-item:nth-child(7) {
+    margin-left: auto !important;
+  }
+  .service-item:nth-child(8) {
+    margin-left: auto !important;
+  }
+  .service-item:nth-child(3) p {
+    max-width: 100%;
+  }
+  .service-item:nth-child(4) p {
+    max-width: 100%;
+  }
+  .service-item:nth-child(7) p {
+    max-width: 100%;
+  }
+  .service-item:nth-child(8) p {
+    max-width: 100%;
   }
 }
 
@@ -164,7 +218,6 @@
   background-color: #fdd8c4;
   padding: 20px;
   border-radius: 10px;
-  max-width: 300px;
   justify-self: end;
 }
 
@@ -217,7 +270,9 @@
 
 @media (max-width: 84em) {
   .vaccination-content.grid--2-cols-1-2 {
-    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    grid-template-columns: 30% 1fr;
+    /* grid-template-columns: 1fr; */
   }
 
   .medium-paragraph {
@@ -225,7 +280,10 @@
   }
 
   .vaccination-details {
-    padding: 0;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: center;
+    /* padding: 6.4rem 0; */
   }
   .vaccination-content {
     width: 100%; /* Ensure the parent container spans the full width */
@@ -235,7 +293,302 @@
     justify-content: center;
 
     border-radius: 10px;
-    min-width: 60%;
+    /* min-width: 60%; */
+    justify-self: center;
+    margin-bottom: 20px;
+  }
+
+  .flex-list {
+    max-width: min-content;
+    margin: 0 auto;
+  }
+}
+.emphesize {
+  color: var(--heading-main);
+  font-weight: 600;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container::after {
+  content: "";
+  background-color: rgba(247, 175, 58, 0.6);
+  /* background-color: var(--main-orange-500); */
+  /* opacity: 0.6; */
+  /* background: linear-gradient(
+    rgba(247, 174, 58, 0.7987570028011204) 20%,
+    rgba(247, 174, 58, 0.4962359943977591) 100%
+  ); */
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  backdrop-filter: blur(0.5px);
+}
+
+.image-container img {
+  width: 100%;
+  height: 60rem;
+  object-fit: cover;
+}
+
+.image-container .text-overlay {
+  /* width: 100%; */
+  font-size: 3rem;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  /* transform: translateY(-50%); */
+  z-index: 5;
+  background: white;
+  padding: 1.6rem 3.2rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-align: center;
+}
+
+@media (max-width: 75em) {
+  .image-container img {
+    height: 50rem;
+  }
+  .image-container .text-overlay {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .image-container img {
+    height: 40rem;
+  }
+  /*  */
+
+  .vaccination-content.grid--2-cols-1-2 {
+    gap: 3.2rem;
+    /* grid-template-columns: 1fr !important; */
+    /* grid-template-columns: 30% 1fr; */
+    /* grid-template-columns: 1fr; */
+  }
+}
+
+@media (max-width: 44em) {
+  .image-container img {
+    height: 35rem;
+  }
+  .image-container .text-overlay {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .vaccination-content.grid--2-cols-1-2 {
+    grid-template-columns: 1fr !important;
+  }
+  .vaccination-schedule {
+    width: 100%;
+  }
+
+  .vaccination-schedule .flex-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.8rem;
+  }
+
+  .vaccination-schedule .flex-list li {
+    gap: 0.8rem;
+  }
+  .section-posjete h2:last-child {
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .vaccination-schedule .flex-list {
+    grid-template-columns: 1fr;
+  }
+
+  .image-container img {
+    height: 30rem;
+  }
+}
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.icon-container {
+  background-color: var(--main-orange-500);
+  color: var(--main-orange-100);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.content h3 {
+  margin-top: 0;
+  font-size: 2.4rem;
+  color: var(--heading-main);
+}
+
+.content p {
+  margin: 10px 0;
+
+  font-size: 1.6rem;
+}
+
+/*
+.service-item:nth-child(3n) {
+  margin-left: 50rem; 
+}
+.service-item:nth-child(4n) {
+  margin-left: 50rem; 
+}
+
+.section-pedijatrijski-pregledi .service-item:last-child {
+  margin-left: 50rem;
+}
+*/
+.service-item:nth-child(3) {
+  margin-left: 50rem;
+}
+.service-item:nth-child(4) {
+  margin-left: 50rem;
+}
+.service-item:nth-child(7) {
+  margin-left: 50rem;
+}
+.service-item:nth-child(8) {
+  margin-left: 50rem;
+}
+.service-item:nth-child(3) p {
+  max-width: 100%;
+}
+.service-item:nth-child(4) p {
+  max-width: 100%;
+}
+
+.service-item p {
+  max-width: 50%;
+}
+
+@media (max-width: 59em) {
+  .service-item {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  .service-item p {
+    max-width: 100%;
+  }
+  .service-item:nth-child(2n) {
+    margin-left: auto;
+  }
+}
+
+.section-pedijatrijski-pregledi {
+  padding: 0;
+}
+
+.vaccination-title {
+  text-align: center;
+}
+
+.vaccination-schedule {
+  background-color: #fdd8c4;
+  padding: 20px;
+  border-radius: 10px;
+  justify-self: end;
+}
+
+.vaccination-schedule ul {
+  list-style: none;
+  padding: 0;
+}
+
+.vaccination-schedule li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.vaccination-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4.4rem;
+
+  padding-left: 5rem;
+  padding-right: 20rem;
+}
+
+.white-circle {
+  display: flex;
+  background-color: var(--main-orange-100);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.white-circle i {
+  font-size: 20px;
+}
+
+.flex-list {
+  padding-left: 20px;
+}
+.medium-paragraph {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.flex-list li {
+  display: flex;
+
+  gap: 2rem;
+}
+
+@media (max-width: 84em) {
+  .vaccination-content.grid--2-cols-1-2 {
+    gap: 3.2rem;
+    grid-template-columns: 30% 1fr;
+    /* grid-template-columns: 1fr; */
+  }
+
+  .medium-paragraph {
+    max-width: 100%;
+  }
+
+  .vaccination-details {
+    padding: 1.6rem;
+    display: flex;
+    justify-content: center;
+    /* padding: 6.4rem 0; */
+  }
+  .vaccination-content {
+    width: 100%; /* Ensure the parent container spans the full width */
+  }
+  .vaccination-schedule {
+    padding: 20px;
+    justify-content: center;
+
+    border-radius: 10px;
     justify-self: center;
     margin-bottom: 20px;
   }

@@ -139,6 +139,10 @@
 /* ---------------------------- */
 /* SERVICES SECTION */
 /* ---------------------------- */
+.section-usluge {
+  margin-top: 12.8rem;
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -210,6 +214,28 @@
   transform: scale(1.1);
 }
 
+.section-o-nama .o-nama-img {
+  width: 100%;
+}
+
+.doodle-circle-2 {
+  top: 58%;
+  left: -3%;
+  width: 29% !important;
+  /* height: 30%; */
+}
+
+.doodle-circle-3 {
+  width: 32% !important;
+  left: 38% !important;
+}
+
+.doodle-circle-4 {
+  top: 37%;
+  left: 50%;
+  width: 42% !important;
+}
+
 /* ---------------------------- */
 /* RESPONSIVE */
 /* ---------------------------- */
@@ -239,10 +265,22 @@
     gap: 1.6rem;
   }
   .section-usluge {
-    padding-top: 12.8rem;
+    padding-top: 22.4rem;
   }
   .section-team {
     background-size: 120% 120%;
+  }
+  .doodle-circle-2 {
+    top: 62% !important;
+  }
+  .doodle-circle-3 {
+    top: 60% !important;
+    left: 57% !important;
+  }
+  .doodle-circle-4 {
+    top: 39%;
+    left: 50%;
+    width: 44% !important;
   }
 }
 
@@ -274,6 +312,9 @@
   .service-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .service-card:last-child {
+    grid-column: 1/-1;
+  }
 
   .hero-box-wrapper {
     width: 95%;
@@ -301,16 +342,19 @@
     align-items: center;
   }
   .doodle-circle-2 {
-    top: 20% !important;
-    left: 34% !important;
+    top: 56% !important;
+    left: -3% !important;
+    width: 27% !important;
   }
   .doodle-circle-3 {
-    top: 32% !important;
-    left: 28% !important;
+    top: 54% !important;
+    left: 34.5% !important;
+    width: 30% !important;
   }
   .doodle-circle-4 {
-    top: 53% !important;
-    left: 28% !important;
+    top: 50%;
+    width: 40% !important;
+    left: -2%;
   }
 }
 
@@ -345,13 +389,17 @@
   .section-team .wrapper img {
     display: none !important;
   }
-  .doodle-circle-2 {
-    top: 20% !important;
-    left: 37% !important;
+  .doodle-circle-3 {
+    /* top: 54% !important; */
+    left: 37.5% !important;
+    /* width: 30% !important; */
   }
   .doodle-circle-4 {
-    top: 66% !important;
-    left: -2% !important;
+    /* top: 66% !important; */
+    /* left: -2% !important; */
+    top: 34%;
+    width: 45% !important;
+    left: 48%;
   }
 }
 
@@ -390,26 +438,4 @@
   .section-team {
     background-size: 240% 240%;
   }
-}
-
-.section-o-nama .o-nama-img {
-  width: 100%;
-}
-
-.doodle-circle-2 {
-  top: 58%;
-  left: -3%;
-  width: 29% !important;
-  /* height: 30%; */
-}
-
-.doodle-circle-3 {
-  width: 32% !important;
-  left: 38% !important;
-}
-
-.doodle-circle-4 {
-  top: 40%;
-  left: 10%;
-  width: 45% !important;
 }
