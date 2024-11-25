@@ -142,6 +142,7 @@
   margin-left: 50rem;
 }
 */
+/*
 .service-item:nth-child(3) {
   margin-left: 50rem;
 }
@@ -169,7 +170,7 @@
 
 .service-item p {
   max-width: 50%;
-}
+}*/
 
 @media (max-width: 59em) {
   .service-item {
@@ -465,6 +466,8 @@
   margin-left: 50rem;
 }
 */
+
+/*
 .service-item:nth-child(3) {
   margin-left: 50rem;
 }
@@ -486,7 +489,7 @@
 
 .service-item p {
   max-width: 50%;
-}
+}*/
 
 @media (max-width: 59em) {
   .service-item {
