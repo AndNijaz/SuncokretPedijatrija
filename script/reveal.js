@@ -1,3 +1,7 @@
+window.addEventListener("load", function () {
+  window.scrollTo(0, 0); // Scroll to the top-left corner of the page
+});
+
 const allSections = document.querySelectorAll(".section");
 
 const revealSection = function (entries, observer) {
